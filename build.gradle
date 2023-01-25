@@ -1,0 +1,23 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        maven { url = uri("https://plugins.gradle.org/m2/") }
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.32'
+    }
+}
+
+allprojects {
+    repositories {
+        maven {
+            url "http://artifactory.tls.renault.fr/artifactory/maven-hmi"
+            allowInsecureProtocol true
+        }
+        google()
+        mavenCentral()
+    }
+}
+apply plugin : "project-tasks"

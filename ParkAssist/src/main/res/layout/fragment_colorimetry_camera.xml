@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <tag
+        android:id="@id/uxTag"
+        android:value="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/rd_parkassist_small_vertical_margin"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <alliancex.renault.ui.RenaultIconView
+            android:id="@+id/luminosity_icon"
+            style="@style/RenaultIconView"
+            android:src="@drawable/ric_settings_luminosity"
+            android:layout_weight="0.1"
+            tools:ignore="ContentDescription" />
+
+        <alliancex.renault.ui.RenaultSlider
+            android:id="@+id/luminosity_seek_bar"
+            style="@style/RenaultSlider.Mex"
+            android:layout_width="0dp"
+            android:layout_weight="3.0" />
+
+        <alliancex.renault.ui.RenaultTextView
+            android:id="@+id/luminosity_seek_bar_value"
+            style="@style/RenaultTextView.Body2.Secondary"
+            android:layout_width="@dimen/rd_grid_column_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:paddingEnd="@dimen/seekbar_progress_value_padding"
+            android:paddingStart="@dimen/seekbar_progress_value_padding"
+            android:maxLines="1"
+            android:textAlignment="textEnd"
+            tools:text="100%" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/rd_parkassist_small_vertical_margin"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <alliancex.renault.ui.RenaultIconView
+            android:id="@+id/contrast_icon"
+            style="@style/RenaultIconView"
+            android:src="@drawable/ric_settings_contrast"
+            android:layout_weight="0.1"
+            tools:ignore="ContentDescription" />
+
+        <alliancex.renault.ui.RenaultSlider
+            android:id="@+id/contrast_seek_bar"
+            style="@style/RenaultSlider.Mex"
+            android:layout_width="0dp"
+            android:layout_weight="3.0" />
+
+        <alliancex.renault.ui.RenaultTextView
+            android:id="@+id/contrast_seek_bar_value"
+            style="@style/RenaultTextView.Body2.Secondary"
+            android:layout_width="@dimen/rd_grid_column_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:paddingEnd="@dimen/seekbar_progress_value_padding"
+            android:paddingStart="@dimen/seekbar_progress_value_padding"
+            android:maxLines="1"
+            android:textAlignment="textEnd"
+            tools:text="100%" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/rd_parkassist_small_vertical_margin"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <alliancex.renault.ui.RenaultIconView
+            android:id="@+id/hue_icon"
+            style="@style/RenaultIconView"
+            android:src="@drawable/ric_settings_hue"
+            android:layout_weight="0.1"
+            tools:ignore="ContentDescription" />
+
+        <alliancex.renault.ui.RenaultSlider
+            android:id="@+id/hue_seek_bar"
+            style="@style/RenaultSlider.Mex"
+            android:layout_width="0dp"
+            android:layout_weight="3.0" />
+
+        <alliancex.renault.ui.RenaultTextView
+            android:id="@+id/hue_seek_bar_value"
+            style="@style/RenaultTextView.Body2.Secondary"
+            android:layout_width="@dimen/rd_grid_column_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:paddingEnd="@dimen/seekbar_progress_value_padding"
+            android:paddingStart="@dimen/seekbar_progress_value_padding"
+            android:maxLines="1"
+            android:textAlignment="textEnd"
+            tools:text="100%" />
+
+    </LinearLayout>
+
+</LinearLayout>

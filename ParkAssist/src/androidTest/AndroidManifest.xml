@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?><!-- installLocation="internalOnly" required since external storage is mounted after BOOT_COMPLETED intent is broadcast -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.renault.parkassist"
+    android:installLocation="internalOnly">
+    <application
+        android:extractNativeLibs="true">
+    </application>
+</manifest>

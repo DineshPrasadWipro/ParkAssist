@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/camera_ovl_avm_3d_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/tools_purple_alpha_50">
+
+    <tag
+        android:id="@id/uxTag"
+        android:value="" />
+
+    <fragment
+        android:id="@+id/camera_sonar_alerts_fragment"
+        android:name="com.renault.parkassist.ui.sonar.SonarAlertFragment"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/rd_button_height"
+        android:layout_marginHorizontal="@dimen/rd_grid_keyline_2"
+        android:layout_marginTop="@dimen/rd_dialog_radius"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/sonar_alerts"
+        tools:visibility="visible" />
+
+    <alliancex.renault.ui.RenaultDriverOrientedLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.renault.parkassist.ui.camera.CameraIndicatorView
+            android:id="@+id/elt_camera_indicator"
+            style="@style/RenaultIconView"
+            android:layout_marginHorizontal="@dimen/rd_dialog_radius"
+            android:layout_marginTop="@dimen/rd_dialog_radius"
+            android:background="@drawable/pdr_overlay_background"
+            android:src="@drawable/ric_adas_avm_rear"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="@dimen/avm_3d_camera_sonar_width"
+            android:layout_height="@dimen/avm_3d_camera_sonar_height"
+            android:layout_marginTop="@dimen/rd_bottom_button_bar_padding_top"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <fragment
+                android:id="@+id/camera_sonar_mute_fragment"
+                android:name="com.renault.parkassist.ui.sonar.SonarMuteFragment"
+                android:layout_width="@dimen/rd_button_width_1"
+                android:layout_height="@dimen/rd_button_height"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="@dimen/camera_upa_mini_mute_vertical_bias"
+                tools:layout="@layout/sonar_mute" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </alliancex.renault.ui.RenaultDriverOrientedLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

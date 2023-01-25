@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- TODO("To be removed when https://jira.dr.renault.com/browse/CCSEXT-19299 done ") -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <solid
+        android:color="@color/rc_primary"/>
+
+    <size
+        android:width="@dimen/rd_icon_size"
+        android:height="@dimen/rd_icon_size"/>
+
+</shape>

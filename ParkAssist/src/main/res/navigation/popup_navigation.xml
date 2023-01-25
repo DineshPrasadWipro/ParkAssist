@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/popup_navigation"
+        android:label="popup_navigation"
+        app:startDestination="@+id/splashFragment">
+    <fragment
+            android:id="@+id/sonarPipFragment"
+            android:name="com.renault.parkassist.ui.sonar.SonarPipFragment" />
+    <fragment
+            android:id="@+id/splashFragment"
+            android:name="com.renault.parkassist.ui.SplashFragment"
+            android:label="Blankfragment" />
+    <action
+            android:id="@+id/action_to_splashFragment"
+            app:destination="@id/splashFragment" />
+    <fragment
+            android:id="@+id/avmPipFragment"
+            android:name="com.renault.parkassist.ui.avm.AvmPipFragment" />
+</navigation>

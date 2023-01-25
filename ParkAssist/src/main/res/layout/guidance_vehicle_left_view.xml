@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_vehicle_parallel_left_front"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_height="@dimen/apa_guidance_vehicle_center_view_height"
+    tools:layout_width="@dimen/apa_guidance_vehicle_center_view_width">
+
+
+
+    <ImageView
+        android:id="@+id/left_easypark_front"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/apa_guidance_vehicle_left_easypark_front_start"
+        android:layout_marginTop="@dimen/apa_guidance_vehicle_left_easypark_front_top"
+        android:layout_marginRight="@dimen/apa_guidance_vehicle_left_easypark_front_end"
+        android:layout_marginBottom="@dimen/apa_guidance_vehicle_left_easypark_front_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ric_adas_park_assist_easypark" />
+
+
+    <ImageView
+        android:id="@+id/left_car"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/apa_guidance_vehicle_left_car_start"
+        android:layout_marginTop="@dimen/apa_guidance_vehicle_left_car_top"
+        android:layout_marginRight="@dimen/apa_guidance_vehicle_left_car_end"
+        android:layout_marginBottom="@dimen/apa_guidance_vehicle_left_car_bottom"
+        android:rotation="@dimen/apa_guidance_vehicle_left_car_rotation_left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rimg_exter_vehicle_top_01" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

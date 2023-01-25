@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:maxLevel="@integer/sonar_senor_level_0"         android:drawable="@drawable/rimg_element_upa_level_1_01" />
+    <item android:maxLevel="@integer/sonar_senor_level_0_hatched" android:drawable="@drawable/rimg_element_upa_level_1_01lines" />
+    <item android:maxLevel="@integer/sonar_senor_level_1"         android:drawable="@drawable/rimg_element_upa_level_1_01" />
+    <item android:maxLevel="@integer/sonar_senor_level_1_hatched" android:drawable="@drawable/rimg_element_upa_level_1_01lines" />
+    <item android:maxLevel="@integer/sonar_senor_level_2"         android:drawable="@drawable/rimg_element_upa_level_2_01" />
+    <item android:maxLevel="@integer/sonar_senor_level_2_hatched" android:drawable="@drawable/rimg_element_upa_level_2_01lines" />
+    <item android:maxLevel="@integer/sonar_senor_level_3"         android:drawable="@drawable/rimg_element_upa_level_3_01" />
+    <item android:maxLevel="@integer/sonar_senor_level_3_hatched" android:drawable="@drawable/rimg_element_upa_level_3_01lines" />
+</level-list>

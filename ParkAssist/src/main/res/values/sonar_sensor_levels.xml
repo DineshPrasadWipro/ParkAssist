@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="sonar_senor_level_0">0</integer>
+    <integer name="sonar_senor_level_0_hatched">1</integer>
+    <integer name="sonar_senor_level_1">2</integer>
+    <integer name="sonar_senor_level_1_hatched">3</integer>
+    <integer name="sonar_senor_level_2">4</integer>
+    <integer name="sonar_senor_level_2_hatched">5</integer>
+    <integer name="sonar_senor_level_3">6</integer>
+    <integer name="sonar_senor_level_3_hatched">7</integer>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <tag
+        android:id="@id/uxTag"
+        android:value="" />
+
+    <com.renault.ui.apaguidance.ApaGuidanceVehicleCenterBackView
+        android:id="@+id/vehicle_center_back_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

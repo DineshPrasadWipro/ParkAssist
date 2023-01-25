@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?><!-- installLocation="internalOnly" required since external storage is mounted after BOOT_COMPLETED intent is broadcast -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.renault.parkassist"
+    android:installLocation="internalOnly">
+
+    <!-- Android permissions -->
+    <uses-permission
+        android:name="android.permission.MANAGE_USERS"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-permission
+        android:name="android.permission.INTERNAL_SYSTEM_WINDOW"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission
+        android:name="android.permission.INTERACT_ACROSS_USERS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.INTERACT_ACROSS_USERS_FULL"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS_PRIVILEGED"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.car.permission.CONTROL_CAR_DOORS" />
+
+    <!-- Alliance permissions -->
+    <uses-permission android:name="alliance.car.permission.ADAS_RVC" />
+    <uses-permission android:name="alliance.car.permission.CONTROL_ADAS_RVC" />
+    <uses-permission android:name="alliance.car.permission.ADAS_AVM" />
+    <uses-permission android:name="alliance.car.permission.CONTROL_ADAS_AVM" />
+    <uses-permission android:name="alliance.car.permission.ADAS_SONAR" />
+    <uses-permission android:name="alliance.car.permission.CONTROL_ADAS_SONAR" />
+    <uses-permission android:name="alliance.car.permission.ADAS_RCTA" />
+    <uses-permission android:name="alliance.car.permission.CONTROL_ADAS_RCTA" />
+    <uses-permission android:name="alliance.car.permission.ADAS_RAEB" />
+    <uses-permission android:name="alliance.car.permission.CONTROL_ADAS_RAEB" />
+    <uses-permission android:name="alliance.car.permission.ADAS_APA" />
+    <uses-permission android:name="alliance.car.permission.CONTROL_ADAS_APA" />
+    <uses-permission android:name="alliance.car.permission.ADAS_FAPK" />
+    <uses-permission android:name="alliance.car.permission.CONTROL_ADAS_FAPK" />
+    <uses-permission android:name="alliance.car.permission.ADAS_PARKING_AIDS" />
+    <uses-permission android:name="alliance.car.permission.CONTROL_ADAS_PARKING_AIDS" />
+    <uses-permission android:name="alliance.car.permission.SONAR" />
+    <uses-permission android:name="alliance.car.permission.SONAR_CONTROL" />
+    <uses-permission android:name="alliance.car.permission.SURROUNDVIEW" />
+    <uses-permission android:name="alliance.car.permission.SURROUNDVIEW_CONTROL" />
+    <uses-permission android:name="alliance.car.permission.AUTOPARK" />
+    <uses-permission android:name="alliance.car.permission.AUTOPARK_CONTROL" />
+    <uses-permission android:name="alliance.car.permission.POWERTRAIN" />
+    <uses-permission android:name="alliance.car.permission.WINDOW_OVERLAY" />
+    <uses-permission android:name="alliance.car.permission.ALLIANCE_CAR_AUDIO_SERVICE" />
+    <!-- To be deprecated -->
+    <uses-permission android:name="alliance.car.permission.ADAS" />
+    <uses-permission android:name="alliance.car.permission.CONTROL_ADAS" />
+    <uses-permission android:name="alliance.car.permission.RCTA" />
+    <uses-permission android:name="alliance.car.permission.CONTROL_RCTA" />
+
+    <uses-feature
+        android:name="android.hardware.type.automotive"
+        android:required="true" />
+
+    <!-- TODO: handle Google App indexing -->
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/rlb_parkassist_app_name"
+        android:requiredForAllUsers="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CarUi.WithToolbar"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <uses-library
+            android:name="android.car"
+            android:required="false" />
+
+        <activity
+            android:name=".ui.SurroundLauncherActivity"
+            android:configChanges="uiMode"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:taskAffinity=""
+            android:theme="@style/Theme.Transparent">
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true" />
+            <intent-filter>
+                <category android:name="com.alliance.ALLIANCE_CAR_APPLICATION" />
+                <action android:name="com.alliance.SURROUND_VIEW" />
+            </intent-filter>
+        </activity>
+        <receiver
+            android:name="com.renault.parkassist.service.AvmBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.alliance.intent.action.ACTION_START_AVM" />
+            </intent-filter>
+        </receiver>
+        <activity-alias
+            android:name=".ui.MainActivity"
+            android:exported="true"
+            android:targetActivity=".ui.SurroundLauncherActivity">
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true" />
+            <intent-filter>
+                <action android:name="alliance.intent.action.CAMERA" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity
+            android:name=".ui.EasyParkLauncherActivity"
+            android:configChanges="uiMode"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:taskAffinity=""
+            android:theme="@style/Theme.Transparent">
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true" />
+            <intent-filter>
+                <category android:name="com.alliance.ALLIANCE_CAR_APPLICATION" />
+                <action android:name="com.alliance.PARK_ASSIST" />
+            </intent-filter>
+        </activity>
+        <receiver
+            android:name="com.renault.parkassist.service.EasyParkBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.alliance.intent.action.ACTION_START_EASY_PARK" />
+            </intent-filter>
+        </receiver>
+        <activity-alias
+            android:name=".ui.apa.ApaActivity"
+            android:configChanges="uiMode"
+            android:exported="true"
+            android:targetActivity=".ui.EasyParkLauncherActivity">
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true" />
+            <intent-filter>
+                <action android:name="alliance.intent.action.EASY_PARK_ASSIST" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity
+            android:name=".ui.settings.SettingsActivity"
+            android:configChanges="uiMode"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:taskAffinity="">
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true" />
+            <intent-filter>
+                <action android:name="alliance.intent.action.PARK_ASSIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.FullscreenShadowActivity"
+            android:configChanges="uiMode"
+            android:directBootAware="true"
+            android:exported="true"
+            android:showWhenLocked="true"
+            android:theme="@style/Theme.Transparent"
+            android:turnScreenOn="true">
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true" />
+        </activity>
+
+        <activity
+            android:name=".ui.FullscreenActivity"
+            android:allowEmbedded="true"
+            android:configChanges="uiMode"
+            android:directBootAware="true"
+            android:exported="true"
+            android:resizeableActivity="true"
+            android:showWhenLocked="true"
+            android:theme="@style/ParkAssistTheme.WindowOverlay"
+            android:turnScreenOn="true">
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true" />
+        </activity>
+
+        <activity
+            android:name=".ui.PopUpActivity"
+            android:allowEmbedded="true"
+            android:configChanges="uiMode|layoutDirection|locale"
+            android:directBootAware="true"
+            android:exported="true"
+            android:resizeableActivity="true"
+            android:showWhenLocked="true"
+            android:theme="@style/Theme.Transparent">
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true" />
+        </activity>
+
+        <activity
+            android:name=".ui.apa.ApaWarningActivity"
+            android:allowEmbedded="true"
+            android:configChanges="uiMode"
+            android:directBootAware="true"
+            android:exported="true"
+            android:resizeableActivity="true"
+            android:showWhenLocked="true"
+            android:theme="@style/Theme.Transparent">
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true" />
+        </activity>
+
+        <activity
+            android:name=".ui.surround.SurroundWarningActivity"
+            android:allowEmbedded="true"
+            android:configChanges="uiMode"
+            android:directBootAware="true"
+            android:exported="true"
+            android:resizeableActivity="true"
+            android:showWhenLocked="true"
+            android:theme="@style/Theme.Transparent">
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true" />
+        </activity>
+
+        <service
+            android:name="com.renault.parkassist.service.DisplayService"
+            android:directBootAware="true"
+            android:exported="false"
+            android:singleUser="false" />
+        <service
+            android:name="com.renault.parkassist.service.CameraConnectionService"
+            android:directBootAware="true"
+            android:exported="false"
+            android:singleUser="true" />
+        <service
+            android:name=".service.UserBootService"
+            android:directBootAware="true"
+            android:exported="false" />
+
+        <!-- directBootAware: allow startup in direct boot mode i.e before user has unlock the screen-->
+        <receiver
+            android:name="com.renault.parkassist.service.BootBroadcastReceiver"
+            android:directBootAware="true"
+            android:exported="true">
+            <!-- TODO: Max priority according to some stack overflow discussion, but not explicit in Android doc
+             see https://jira.dt.renault.com/browse/SWL-17955 -->
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".service.LocaleChangeReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED"></action>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

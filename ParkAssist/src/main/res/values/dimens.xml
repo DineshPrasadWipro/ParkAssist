@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="rd_parkassist_small_vertical_margin">10dp</dimen>
+    <dimen name="rd_parkassist_camera_ovl_padding">10dp</dimen>
+    <dimen name="navbar_overlay_height">150dp</dimen>
+
+    <item name="camera_error_icon_vertical_bias" format="float" type="dimen">.4</item>
+
+    <dimen name="sonar_settings_bottom_margin">100dp</dimen>
+
+    <!-- Dimensions for custom_dialog -->
+    <dimen name="custom_dialog_vertical_margin">10dp</dimen>
+    <dimen name="custom_dialog_horizontal_margin">20dp</dimen>
+
+    <!-- Dimension for padding of hue_seek_bar_value -->
+    <dimen name="seekbar_progress_value_padding">5dp</dimen>
+
+    <!-- Dimension for MVC screen -->
+    <dimen name="mvc_main_screen_button_width">184dp</dimen>
+    <dimen name="mvc_main_camera_view_width">814dp</dimen>
+    <dimen name="mvc_main_sonar_view_width">209dp</dimen>
+    <dimen name="mvc_main_sonar_view_height">380dp</dimen>
+    <dimen name="mvc_main_zoom_button_width">184dp</dimen>
+    <dimen name="mvc_main_zoom_button_height">80dp</dimen>
+    <dimen name="mvc_settings_button_width">130dp</dimen>
+    <dimen name="mvc_settings_margin_bottom">55dp</dimen>
+    <dimen name="mvc_settings_left_panel_margin_end">20dp</dimen>
+    <dimen name="rd_parkassist_button_margin">24dp</dimen>
+    <item name="mvc_settings_guide_line_percent" format="float" type="integer">0.4</item>
+
+</resources>

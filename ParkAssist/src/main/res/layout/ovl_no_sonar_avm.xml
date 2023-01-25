@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/rc_surface_dark">
+
+        <ImageView
+            android:id="@+id/image_car_movement"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/guideline_car_movement_bottom"
+            app:layout_constraintEnd_toEndOf="@+id/image_car_upa"
+            app:layout_constraintStart_toStartOf="@+id/image_car_upa"
+            app:layout_constraintTop_toTopOf="@+id/guideline_car_movement_top"
+            app:srcCompat="@drawable/rimg_element_apa_car_movement" />
+
+        <ImageView
+            android:id="@+id/image_car_upa"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_car_bottom"
+            app:layout_constraintEnd_toEndOf="@id/guideline_car_right"
+            app:layout_constraintStart_toStartOf="@id/guideline_car_left"
+            app:layout_constraintTop_toTopOf="@id/guideline_car_top"
+            app:srcCompat="@drawable/rimg_exter_vehicle_top_01" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_car_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="@dimen/apa_masking_car_guideline_horizontal" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_car_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="@dimen/apa_masking_car_guideline_vertical" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_car_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="@dimen/apa_masking_car_guideline_horizontal" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_car_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="@dimen/apa_masking_car_guideline_vertical" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_car_movement_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="@dimen/apa_masking_car_movement_guideline_top" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_car_movement_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="@dimen/apa_masking_car_movement_guideline_bottom" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

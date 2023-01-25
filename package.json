@@ -1,0 +1,55 @@
+{
+  "name": "park-assist",
+  "version": "5.6.0",
+  "private": true,
+  "scripts": {
+    "test": "run-s test:*",
+    "test:build": "./gradlew check",
+    "build": "./gradlew build",
+    "lint:kotlin": "./gradlew ktlint",
+    "format:kotlin": "./gradlew ktlintFormat",
+    "commit": "standard-commit",
+    "commitlint": "standard-commitlint --from origin/master",
+    "release": "npx standard-version"
+  },
+  "engines": {
+    "node": ">=8",
+    "npm": ">=6"
+  },
+  "gitHooks": {
+    "commit-msg": "standard-commithook"
+  },
+  "hmi": {
+    "type": "app",
+    "function": "HMI_ADAS",
+    "module": "ParkAssist"
+  },
+  "standard-version": {
+    "issueUrlFormat": "https://jira.dt.renault.com/browse/{{id}}",
+    "commitAll": true,
+    "scripts": {
+      "postbump": "bash scripts/postbump.sh"
+    }
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false,
+    "proseWrap": "always"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.19.1",
+    "standard-commit": "^4.2.4",
+    "typescript": "^3.9.9",
+    "yorkie": "^2.0.0"
+  },
+  "publish": false,
+  "repository": {
+    "type": "git",
+    "url": "https://gitlabee.dt.renault.com/partners/loire/hmi/apps/renault/ParkAssist"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "dependencies": {
+    "module": "^1.2.5"
+  }
+}

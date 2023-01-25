@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MenuItems xmlns:app="http://schemas.android.com/apk/res-auto">
+    <MenuItem
+        app:id="@+id/toolbar_icon_settings"
+        app:icon="@drawable/ric_gen_settings"
+        app:title="@string/toolbar_menu_settings" />
+</MenuItems>

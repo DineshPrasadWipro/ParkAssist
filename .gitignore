@@ -1,0 +1,47 @@
+# Gitlab
+/default*
+
+# NPM
+node_modules
+.npm
+/dist
+/output
+
+
+# Android
+*.iml
+.gradle
+/local.properties
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/markdown-navigator-enh.xml
+/.idea/markdown-navigator.xml
+/.idea/misc.xml
+/.idea/caches/
+/.idea/gradle.xml
+/.idea/jarRepositories.xml
+/.idea/codeStyles/Project.xml
+/.idea/assetWizardSettings.xml
+/.idea/shelf/
+/.idea/navEditor.xml
+/.idea/compiler.xml
+/.idea/runConfigurations.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Filter Studio Code working folders
+**/.project
+**/.settings
+**/.classpath
+
+# Custom install process
+ParkAssist*.apk
+ParkAssist/ParkAssist_*

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/toolbar_icon_apps_monitor"
+        android:icon="@drawable/ric_apps_monitor"
+        android:title="@string/toolbar_menu_apps_monitor" />
+
+    <item
+        android:id="@+id/toolbar_icon_easypark"
+        android:icon="@drawable/ric_adas_park_assist_easypark"
+        android:title="@string/toolbar_menu_easypark" />
+
+    <item
+        android:id="@+id/toolbar_icon_settings"
+        android:icon="@drawable/ric_gen_settings"
+        android:title="@string/toolbar_menu_settings" />
+
+</menu>

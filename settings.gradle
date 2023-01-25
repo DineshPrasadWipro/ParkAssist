@@ -1,0 +1,4 @@
+// enable `gradle/libs.versions.toml`
+enableFeaturePreview("VERSION_CATALOGS")
+
+include ':ParkAssist'

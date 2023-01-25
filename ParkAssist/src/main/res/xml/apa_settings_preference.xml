@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <alliancex.renault.ui.RenaultPreference
+        android:id="@+id/apa_settings_title_preference"
+        android:key="@string/apaTitlePreference"
+        app:singleLineTitle="false"
+        android:title="@string/rlb_parkassist_apa_settings_title" />
+
+    <alliancex.renault.ui.RenaultRadioPreference
+        android:id="@+id/apa_settings_radio_preference"
+        android:key="@string/apaManeuverTypeRadioPreference"
+        android:visibility="gone"
+        app:allowDividerAbove="false"
+        app:allowDividerBelow="false"
+        app:paddingStepStart="1"
+        app:showBackground="true"
+        tools:visibility="visible" />
+
+</PreferenceScreen>

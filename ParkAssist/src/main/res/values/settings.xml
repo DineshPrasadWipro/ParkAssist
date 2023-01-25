@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- main settings preference keys -->
+    <string name="frontToggle">frontToggle</string>
+    <string name="sideToggle">sideToggle</string>
+    <string name="rearToggle">rearToggle</string>
+    <string name="soundExpandableCategory">soundExpandableCategory</string>
+    <string name="soundToggle">soundToggle</string>
+    <string name="soundTypeResume">soundTypeResume</string>
+    <string name="soundRadioPreference">soundRadioPreference</string>
+    <string name="soundVolumeResume">soundVolumeResume</string>
+    <string name="soundVolume">soundVolume</string>
+    <string name="rctaToggle">rctaToggle</string>
+    <string name="raebToggle">raebToggle</string>
+    <string name="oseToggle">oseToggle</string>
+
+    <!-- apa settings preference keys -->
+    <string name="apaTitlePreference">apaSettingsTitlePreference</string>
+    <string name="apaManeuverTypeRadioPreference">apaManeuverTypeRadioPreference</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:alpha="@dimen/rc_alpha_disabled" android:color="@color/renault_color_red" android:state_enabled="false" />
+    <item android:alpha="@dimen/rc_alpha_pressed" android:color="@color/renault_color_red" android:state_pressed="true" />
+    <item android:color="@color/renault_color_red" />
+</selector>

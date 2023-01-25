@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- STANDARD VIEW [avm_birdrearfront-port] -->
+    <dimen name="avm_std_camera_height">666dp</dimen>
+    <!-- (view cut in 2 parts : camera (834/1250 ~ 2/3) & sonar (416/1250 ~ 1/3)) -->
+    <dimen name="avm_std_camera_horizontal_weight">.67</dimen>
+    <dimen name="avm_std_sonar_horizontal_weight">.33</dimen>
+    <!-- [view_port_1250_666_px] sonar alerts width percentage -->
+    <!-- (h-centered in camera zoning) alerts width / camera width = 600 / 834 = 0.72 -->
+    <item name="avm_std_alerts_width_percent" format="float" type="dimen">.72</item>
+    <!-- [camera_upa_basic] (start to button_center) / h-centered in sonar zoning -->
+    <item name="avm_std_mute_horizontal_bias" format="float" type="dimen">.5</item>
+    <!-- [camera_upa_basic] (top to button_center) / screen height = (348 + 80 / 2) / 666 -->
+    <item name="avm_std_mute_vertical_bias" format="float" type="dimen">.58</item>
+    <!-- [view_port_1250_666_px] (top to button_center) / layout height = (175 + 80 / 2) / 666 -->
+    <item name="avm_std_easypark_vertical_bias" format="float" type="dimen">.32</item>
+
+    <!-- PANORAMIC VIEW -->
+    <!-- [view_port_1250_592_px_avm] sonar alerts width percentage -->
+    <dimen name="avm_pano_alerts_margin_horizontal">129dp</dimen>
+    <!-- [view_port_1250_592_px_avm] sonar zoning 192 x 338 - horizontal position -->
+    <!-- (camera width - sonar width) / camera width = (1250 - 192) / 1250 = 0.85 -->
+    <item name="avm_pano_camera_zoning_horizontal_weight" format="float" type="dimen">.85</item>
+    <item name="avm_pano_sonar_zoning_horizontal_weight" format="float" type="dimen">.15</item>
+
+    <dimen name="avm_pano_camera_sonar_width">192dp</dimen>
+    <dimen name="avm_pano_camera_sonar_height">333dp</dimen>
+
+    <!-- SIDES VIEW [avm_birdsides-port] -->
+    <!-- [view_land_birsides] sonar alerts width percentage -->
+    <!-- (h-centered in camera zoning) alerts width / camera width  = 440 / 1192.4 = 0.37 -->
+    <item name="avm_sides_alerts_width_percent" format="float" type="dimen">.37</item>
+    <!-- [view_port_birsides] (top to button_center) / screen height = (500 + 80 / 2) / 948 -->
+    <item name="avm_sides_mute_vertical_bias" format="float" type="dimen">.57</item>
+
+    <!-- [view_land_birsides] fix center camera in whole screen = 316 - (13 + 184 + 12) -->
+    <dimen name="avm_bird_sides_camera_margin">107dp</dimen>
+
+    <!-- Vertical bar masks size and position -->
+    <dimen name="avm_sides_mask_width">5dp</dimen>
+    <item name="avm_sides_mask_left_horizontal_bias" format="float" type="dimen">.25</item>
+    <item name="avm_sides_mask_right_horizontal_bias" format="float" type="dimen">.75</item>
+
+    <!-- 3D VIEW -->
+    <!-- [view_port_3d] only used in landscape layout -->
+    <!-- (camera width - sonar width) / camera width = (1250 - 192) /1250 = 0.85 -->
+    <item name="avm_3d_sonar_zoning_horizontal_weight" format="float" type="dimen">.15</item>
+    <dimen name="avm_3d_camera_sonar_width">192dp</dimen>
+    <dimen name="avm_3d_camera_sonar_height">333dp</dimen>
+    <dimen name="avm_disclaimer_margin_bottom">168dp</dimen>
+
+    <!-- SETTINGS VIEW -->
+    <!-- [avm_settings_port] camera settings view height = 666 -->
+    <dimen name="avm_camera_settings_view_height">666dp</dimen>
+    <!-- [avm_settings_land] camera settings view width = 551 -->
+    <dimen name="avm_camera_settings_view_width">551dp</dimen>
+    <!-- [avm_settings-land] button vertical spacing -->
+    <dimen name="avm_camera_settings_button_margin_top">16dp</dimen>
+
+    <!-- POPUP VIEW [avm_popup-port][avm_popup-land] -->
+    <!-- [camera_upa_popup2] (top to button_center) / popup height -->
+    <!-- [camera_upa_popup2] (229 + 80 / 2) / 461 = 0.58 -->
+    <item name="avm_popup_mute_vertical_bias" format="float" type="dimen">.58</item>
+
+    <!-- [camera_upa_mini] (top to button_center) / screen height = (137 + 80 / 2) / 277 -->
+    <item name="camera_upa_mini_mute_vertical_bias" format="float" type="dimen">.64</item>
+
+    <!-- APA VIEW -->
+    <!-- (h-centered in camera zoning) alerts width / camera width = 600 / 834 = 0.72 -->
+    <item name="apa_alerts_width_percent" format="float" type="dimen">.72</item>
+
+    <dimen name="avm_apa_sonar_alerts_mini_margin_horizontal">64dp</dimen>
+
+    <!-- APA RVC VIEW -->
+    <!-- [apa_land] alerts margin left = 110 -->
+    <dimen name="apa_alerts_margin_left">107dp</dimen>
+    <!-- [apa_land] alerts margin right = 25 -->
+    <dimen name="apa_alerts_margin_right">32dp</dimen>
+
+</resources>

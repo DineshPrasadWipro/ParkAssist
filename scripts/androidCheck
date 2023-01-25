@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# FIXME: Temporarily disabling because detekt and spotless have too many errors that don't seem to
+#  be directly related to the migration
+#  ref: CCSEXT-73070
+#./gradlew check -x test

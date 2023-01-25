@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rvc_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="@drawable/ic_grid_land">
+
+    <tag
+        android:id="@id/uxTag"
+        android:value="@string/rvc_ux" />
+
+    <alliancex.renault.ui.RenaultDriverOrientedLayout
+        android:id="@+id/rvc_camera_sonar_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rvc_std_camera_height"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Space
+            android:id="@+id/camera_space_start"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="@dimen/rvc_left_camera_sonar_percent" />
+
+        <fragment
+            android:id="@+id/rvc_standard_camera_fragment"
+            android:name="com.renault.parkassist.ui.camera.CameraFragment"
+            android:layout_width="@dimen/rvc_std_camera_width"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_ovl_rvc_std" />
+
+        <fragment
+            android:id="@+id/sonar"
+            android:name="com.renault.parkassist.ui.sonar.SonarFragment"
+            android:layout_width="@dimen/rvc_std_alerts_width"
+            android:layout_height="match_parent"
+            tools:layout="@layout/sonar_rvc" />
+
+        <Space
+            android:id="@+id/camera_space_end"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="@dimen/rvc_right_camera_sonar_percent" />
+    </alliancex.renault.ui.RenaultDriverOrientedLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

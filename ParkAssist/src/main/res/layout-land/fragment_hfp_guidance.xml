@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/apa_sonarwithguidance"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="@drawable/ic_grid_land">
+
+    <alliancex.renault.ui.RenaultTextView
+        android:id="@+id/elt_hfp_guidance_instruction"
+        style="@style/RenaultTextView.Body2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        tools:text="@string/rlb_parkassist_apa_engage_rear_gear" />
+
+    <alliancex.renault.ui.RenaultDriverOrientedLayout
+        android:id="@+id/renault_oriented"
+        android:layout_width="match_parent"
+        android:paddingHorizontal="@dimen/rd_grid_padding"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layout_maneuver_bar"
+            android:layout_width="@dimen/rd_button_width_2"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/rd_grid_column_padding"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.renault.parkassist.ui.apa.ManeuverProgressBar
+                android:id="@+id/elt_adas_gauge"
+                android:layout_width="@dimen/apa_progressbar_width"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/rd_margin_vertical"
+                android:layout_weight="1"
+                app:innerPadding="@dimen/apa_gauge_inner_padding" />
+
+            <alliancex.renault.ui.RenaultToggleIconButton
+                android:id="@+id/elt_adas_camera_switch"
+                style="@style/RenaultToggleIconButton.Mex"
+                android:layout_gravity="bottom|center"
+                android:checked="true"
+                android:drawableTop="@drawable/ric_adas_camera_switch" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/layout_guidance_illus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <fragment
+                android:id="@+id/elt_hfp_camera_view_fragment"
+                android:name="com.renault.parkassist.ui.camera.CameraFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout="@layout/fragment_ovl_rvc_std" />
+
+            <alliancex.renault.ui.RenaultDriverOrientedLayout
+                android:id="@+id/guidance_layout_renault_oriented"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.renault.parkassist.ui.apa.GuidanceView
+                    android:id="@+id/hfp_guidance_picture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/rc_primary"
+                    tools:alpha=".75" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/sonar_alerts_guidance_picture"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <FrameLayout
+                        android:id="@+id/sonar_alerts_fragment_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/rd_icon_size_small"
+                        android:layout_marginHorizontal="@dimen/rd_bottom_button_bar_dot_separator_height"
+                        android:layout_marginBottom="@dimen/rd_scroll_view_padding"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/elt_raeb_off"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/rd_dialog_radius"
+                        android:layout_marginTop="@dimen/rd_dialog_radius"
+                        android:background="@drawable/pdr_overlay_background"
+                        android:src="@drawable/rimg_element_camera_warning_off"
+                        android:visibility="invisible"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:visibility="visible" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </alliancex.renault.ui.RenaultDriverOrientedLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/sonar_full_fragment_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Space
+            android:id="@+id/space_guidance"
+            android:layout_width="@dimen/rd_grid_col_2"
+            android:layout_height="match_parent" />
+
+        <Space
+            android:layout_width="@dimen/rd_slider_thumb_dot_size_large"
+            android:layout_height="match_parent" />
+
+    </alliancex.renault.ui.RenaultDriverOrientedLayout>
+
+    <alliancex.renault.ui.RenaultTextView
+        android:id="@+id/elt_easypark_disclaimer"
+        style="@style/RenaultTextView.Body2.Compressed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/rd_slider_thumb_dot_size_large"
+        android:gravity="center"
+        android:text="@string/rlb_parkassist_disclaimer"
+        android:textAlignment="center" />
+
+</LinearLayout>

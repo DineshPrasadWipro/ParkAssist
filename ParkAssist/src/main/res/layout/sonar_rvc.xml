@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sonar_full"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <tag
+        android:id="@id/uxTag"
+        android:value="" />
+
+    <fragment
+        android:id="@+id/sonar_fragment"
+        android:name="com.renault.parkassist.ui.sonar.SonarSensorBasicFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/sonar_sensor_basic_layout" />
+
+
+    <fragment
+        android:id="@+id/sonar_mute_view"
+        android:name="com.renault.parkassist.ui.sonar.SonarMuteFragment"
+        android:layout_width="@dimen/rd_button_width_1"
+        android:layout_height="@dimen/rd_button_width_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="@dimen/sonar_mute_vertical_bias"
+        tools:layout="@layout/sonar_mute" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

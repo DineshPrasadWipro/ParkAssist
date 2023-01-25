@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="sonar_widget_height">543dp</dimen>
+    <dimen name="sonar_widget_width">288dp</dimen>
+
+    <dimen name="sonar_alerts_horizontal_margin">20dp</dimen>
+
+    <item name="sonar_car_height_percent" format="float" type="dimen">0.73</item>
+
+    <item name="sonar_mute_vertical_bias" format="float" type="dimen">0.55</item>
+
+    <!-- [view_port_1250_666_px] (start to button_center) / h-centered in sonar zoning -->
+    <item name="sonar_easypark_horizontal_bias" format="float" type="dimen">0.5</item>
+    <!-- [view_port_1250_666_px] (top to button_center) / layout height = (175 + 80 / 2) / 666 -->
+    <item name="sonar_easypark_vertical_bias" format="float" type="dimen">0.32</item>
+
+    <!-- View: camera_upa_basic v6.4.1 -->
+    <dimen name="sonar_car_width_upa_basic">214dp</dimen>
+    <dimen name="sonar_car_height_upa_basic">436dp</dimen>
+
+    <!-- View: upa_popup-port v7.5.3 -->
+    <dimen name="sonar_pop_up_sonar_sensor_margin">28dp</dimen>
+
+    <!-- View: camera_upa_basic v7.5.3 -->
+    <!-- position of rimg_vehicle_car_top_upa-port in percentage in its parent  -->
+    <dimen name="sonar_sensor_car_left_percent">0.135</dimen>
+    <dimen name="sonar_sensor_car_right_percent">0.865</dimen>
+    <dimen name="sonar_sensor_car_top_percent">0.064</dimen>
+    <dimen name="sonar_sensor_car_bottom_percent">0.936</dimen>
+
+    <!-- position of rimg_element_upa_level_0_01 in percentage in its parent  -->
+    <dimen name="sonar_sensor_basic_left_percent">0.151</dimen>
+    <dimen name="sonar_sensor_basic_right_percent">0.849</dimen>
+    <dimen name="sonar_sensor_basic_top_percent">0.125</dimen>
+    <dimen name="sonar_sensor_basic_bottom_percent">0.875</dimen>
+
+
+    <dimen name="rd_sonar_alerts_mini_raeb_width">47dp</dimen>
+    <dimen name="rd_sonar_alerts_mini_rcta_width">70dp</dimen>
+    <dimen name="rd_sonar_alerts_mini_rcta_margin">6dp</dimen>
+
+</resources>

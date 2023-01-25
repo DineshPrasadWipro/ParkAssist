@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?><!-- installLocation="internalOnly" required since external storage is mounted after BOOT_COMPLETED intent is broadcast -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.renault.parkassist"
+    android:installLocation="internalOnly">
+
+    <uses-permission
+        android:name="android.permission.SET_ANIMATION_SCALE"
+        tools:ignore="ProtectedPermissions" />
+    <application>
+        <activity
+            android:name=".ui.TestActivity"
+            android:exported="true">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.renault.parkassist.service.DisplayService"
+            android:singleUser="false"
+            tools:replace="android:singleUser" />
+
+        <uses-library
+            android:name="alliance.car"
+            android:required="false"
+            tools:replace="required" />
+    </application>
+</manifest>

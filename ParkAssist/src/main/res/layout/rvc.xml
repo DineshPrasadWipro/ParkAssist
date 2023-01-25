@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rvc_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="@drawable/ic_grid_port">
+
+    <tag
+        android:id="@id/uxTag"
+        android:value="@string/rvc_ux" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rvc_camera_sonar_container_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/elt_text_disclaimer">
+
+        <alliancex.renault.ui.RenaultDriverOrientedLayout
+            android:id="@+id/rvc_camera_sonar_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:baselineAligned="false"
+            app:layout_constraintDimensionRatio="@string/rvc_camera_sonar_ratio"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <fragment
+                android:id="@+id/rvc_standard_camera_fragment"
+                android:name="com.renault.parkassist.ui.camera.CameraFragment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@dimen/rvc_std_camera_horizontal_weight"
+                tools:layout="@layout/fragment_ovl_rvc_std" />
+
+            <fragment
+                android:id="@+id/sonar"
+                android:name="com.renault.parkassist.ui.sonar.SonarFragment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@dimen/rvc_std_sonar_horizontal_weight"
+                tools:layout="@layout/sonar_rvc" />
+
+        </alliancex.renault.ui.RenaultDriverOrientedLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <alliancex.renault.ui.RenaultTextView
+        android:id="@+id/elt_text_disclaimer"
+        style="@style/RenaultTextView.Body1.Compressed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/rd_vertical_spacing"
+        android:text="@string/rlb_parkassist_disclaimer"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/separator" />
+
+    <!-- TODO("This part will be available for gen2") -->
+    <ImageView
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/rd_vertical_spacing"
+        android:src="@drawable/rdr_dot_separator"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/rvc_menu_bar"
+        tools:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/rvc_menu_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/rd_vertical_spacing"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:visibility="visible">
+
+        <alliancex.renault.ui.RenaultToggleIconButton
+            android:id="@+id/button_panoramic"
+            style="@style/RenaultToggleIconButton.Mex.Width2"
+            android:layout_marginEnd="@dimen/rd_grid_column_gutter"
+            android:drawableTop="@drawable/ric_adas_avm_panoramic_upa" />
+
+        <alliancex.renault.ui.RenaultToggleIconButton
+            android:id="@+id/button_camera"
+            style="@style/RenaultToggleIconButton.Mex.Width2"
+            android:drawableTop="@drawable/ric_adas_camera_switch" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

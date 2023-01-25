@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_LOG_TAG">HMI.ParkAssist</string>
+    <string name="rlb_parkassist_trailer_notif_channel">trailer</string>
+
+    <string name="action_start_avm">com.alliance.intent.action.ACTION_START_AVM</string>
+    <string name="action_start_easy_park">com.alliance.intent.action.ACTION_START_EASY_PARK</string>
+
+    <!-- [rvc_standardview-port][rvc_settings-gen1-port] 1250 / 521 -->
+    <!-- [rvc_standardview-land] seems wrong in Outlinr 6.2.3 TBC -->
+    <string name="rvc_camera_sonar_ratio">1250:521</string>
+    <!-- [rvc_settings-gen1-land] camera / view height = 560 / 350 -->
+    <string name="rvc_setting_land_camera_ratio">560:350</string>
+
+    <string name="progress_percentage_text">%1$d%%</string>
+    <string name="loading_transition">loading_transition</string>
+
+    <string name="toolbar_menu_settings">Settings</string>
+    <string name="toolbar_menu_easypark">EasyPark</string>
+    <string name="toolbar_menu_apps_monitor">Apps Monitor</string>
+
+    <string name="avm_view_ux">avm_view</string>
+    <string name="avm_settings_ux">avm_settings</string>
+    <string name="avm_popup_ux">avm_popup</string>
+    <string name="rvc_ux">rvc_standardview</string>
+    <string name="rvc_settings_ux">rvc_settings</string>
+    <string name="fapk_ux">fapk_view</string>
+    <string name="fapk_settings_ux">apa_settings_view</string>
+    <string name="upa_ux">upa_only</string>
+    <string name="upa_popup_ux">upa_popup</string>
+    <string name="trailer_view_ux">trailerview_main</string>
+    <string name="hfp_scanning_avm_ux">apa_mainscanningwithavm</string>
+    <string name="hfp_scanning_rvc_ux">apa_mainscanningwithrvc</string>
+    <string name="hfp_guidance_avm_ux">apa_sonarwithavmguidance</string>
+    <string name="hfp_guidance_rvc_ux">apa_sonarwithrvcguidance</string>
+    <string name="apa_warning_dialog_ux">apa_warning_dialog</string>
+    <string name="surround_warning_dialog_ux">surround_warning_dialog</string>
+    <string name="main_settings">settings_parkingassist</string>
+    <string name="dealer_view_ux">dealerview</string>
+    <string name="mvc_default_radio_view" translatable="false">mvcDefaultRadio</string>
+
+    <!-- MVC string array and values for default view radio preferences-->
+    <string-array name="mvc_default_view_radio_preferences">
+        <item>@string/rlb_parkassist_mvc_default_auto</item>
+        <item>@string/rlb_parkassist_mvc_default_front</item>
+        <item>@string/rlb_parkassist_mvc_default_left</item>
+        <item>@string/rlb_parkassist_mvc_default_right</item>
+    </string-array>
+
+    <string-array name="mvc_default_view_radio_preferences_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+</resources>

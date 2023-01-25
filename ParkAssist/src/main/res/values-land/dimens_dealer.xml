@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- DEALER VIEW -->
+    <dimen name="dealer_camera_width">915dp</dimen>
+    <dimen name="dealer_camera_height">572dp</dimen>
+
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <alliancex.renault.ui.RenaultSwitchPreference
+        android:id="@+id/rcta_toggle"
+        android:key="@string/rctaToggle"
+        android:title="@string/rlb_parkassist_main_settings_rcta"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <alliancex.renault.ui.RenaultSwitchPreference
+        android:id="@+id/raeb_toggle"
+        android:key="@string/raebToggle"
+        android:title="@string/rlb_parkassist_main_settings_raeb"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <alliancex.renault.ui.RenaultSwitchPreference
+        android:id="@+id/ose_toggle"
+        android:key="@string/oseToggle"
+        android:title="@string/rlb_parkassist_main_settings_ose"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+</PreferenceScreen>

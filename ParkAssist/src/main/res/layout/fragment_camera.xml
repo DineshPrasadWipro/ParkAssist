@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/camera_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/tools_red">
+
+    <tag
+        android:id="@id/uxTag"
+        android:value="" />
+
+    <FrameLayout
+        android:id="@+id/camera_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        tools:background="@color/tools_yellow">
+
+        <FrameLayout
+            android:id="@+id/elt_camera_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/camera_error_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/rc_primary"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <alliancex.renault.ui.RenaultIconView
+                style="@style/RenaultIconView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="@dimen/camera_error_icon_vertical_bias"
+                android:src="@drawable/ric_adas_camera_broke" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <FrameLayout
+            android:id="@+id/elt_camera_overlay_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/loading_anim_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/rc_surface"
+        android:transitionName="@string/loading_transition">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/loading_anim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/rlottie_loading_dots"
+            tools:visibility="gone" />
+    </FrameLayout>
+</FrameLayout>

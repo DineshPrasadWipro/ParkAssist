@@ -1,0 +1,9 @@
+[HMI_ADAS] ParkAssist release v5.6.0
+
+[ISSUE Tracker] &JIRA_NAME&
+[ISSUETYPE] OEM_REQ
+[RS_ID] NA
+[DESIGN_ID] NA
+[EPIC] NA
+[DESC] see changes in CHANGELOG.md
+

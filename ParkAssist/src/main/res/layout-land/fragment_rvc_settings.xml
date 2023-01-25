@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_rvc_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/rd_grid_padding"
+    tools:background="@drawable/ic_grid_land">
+
+
+    <include layout="@layout/rl_grid_keyline_0_begin" />
+
+    <include layout="@layout/rl_grid_keyline_0_end" />
+
+    <tag
+        android:id="@id/uxTag"
+        android:value="@string/rvc_settings_ux" />
+    <alliancex.renault.ui.RenaultDriverOrientedLayout
+        android:id="@+id/renault_oriented"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:id="@+id/layout_rvc_settings_colorimetry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/camera_colorimetry_fragment"
+                android:name="com.renault.parkassist.ui.camera.CameraColorimetryFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/rd_grid_column_padding"
+                tools:layout="@layout/fragment_colorimetry_camera" />
+        </FrameLayout>
+
+        <Space
+            android:layout_width="@dimen/rd_vertical_spacing"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:id="@+id/layout_rvc_settings_camera"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <alliancex.renault.ui.RenaultDriverOrientedLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/rd_grid_column_padding">
+
+                    <androidx.fragment.app.FragmentContainerView
+                        android:id="@+id/camera_settings_camera_fragment"
+                        android:name="com.renault.parkassist.ui.camera.CameraFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        app:layout_constraintDimensionRatio="@string/rvc_setting_land_camera_ratio"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout="@layout/fragment_ovl_rvc_settings" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </alliancex.renault.ui.RenaultDriverOrientedLayout>
+        </FrameLayout>
+    </alliancex.renault.ui.RenaultDriverOrientedLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

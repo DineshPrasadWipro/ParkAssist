@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rlb_parkassist_avm" translatable="false">Around View Monitor</string>
+    <string name="rlb_parkassist_rvc" translatable="false">Rear View Monitor</string>
+    <string name="rlb_parkassist_easy_park_assist">Hands-free park assist</string>
+    <string name="rlb_parkassist_auto_park_assist">Automated Park Assist</string>
+    <string name="rlb_parkassist_avm_disclaimer">Watch your surroundings</string>
+    <string name="rlb_parkassist_three_d_info">Swipe on view to turn the car</string>
+    <string name="rlb_parkassist_app_name">Park Assist</string>
+    <string name="rlb_parkassist_disclaimer">Watch your surroundings</string>
+    <string name="rlb_parkassist_boot_info">Boot open</string>
+
+    <!--region Trailer labels-->
+    <string name="rlb_parkassist_trailer">Trailer View</string>
+    <string name="rlb_parkassist_trailer_duration">Trailer view available 30s</string>
+    <string name="rlb_parkassist_trailer_disclaimer">Watch your surroundings</string>
+    <string name="rlb_parkassist_trailer_notif_title">Trailer view available</string>
+    <string name="rlb_parkassist_trailer_rvc_notif_content">Press the camera icon to launch trailer view</string>
+    <string name="rlb_parkassist_trailer_avm_notif_content">Press the camera icon at steady speed to launch trailer view</string>
+    <!--endregion-->
+
+    <!--region Settings labels-->
+    <string name="rlb_parkassist_camera_settings">Camera Settings</string>
+    <string name="rlb_parkassist_main_settings">Parking assistance</string>
+    <string name="rlb_parkassist_main_settings_sonar_front">Front</string>
+    <string name="rlb_parkassist_main_settings_sonar_side">Side</string>
+    <string name="rlb_parkassist_main_settings_sonar_rear">Rear</string>
+    <string name="rlb_parkassist_sound">Sound</string>
+    <string name="rlb_parkassist_main_settings_rcta" translatable="false">Rear Cross traffic Alert</string>
+    <string name="rlb_parkassist_main_settings_ose" translatable="false">Occupant Safety Exit</string>
+    <string name="rlb_parkassist_main_settings_raeb" translatable="false">Rear Emergency Braking</string>
+    <string name="rlb_parkassist_sound_settings_sound_type">Sound type</string>
+    <string name="rlb_parkassist_sound_settings_volume">Volume</string>
+    <!--endregion-->
+
+    <!--region Apa Labels-->
+    <string name="rlb_parkassist_apa_select_side">Select side</string>
+    <string name="rlb_parkassist_apa_drive_forward">Drive forward</string>
+    <string name="rlb_parkassist_apa_stop">Stop</string>
+    <string name="rlb_parkassist_apa_engage_rear_gear">Select reverse gear</string>
+    <string name="rlb_parkassist_apa_engage_forward_gear">Select forward gear</string>
+    <string name="rlb_parkassist_apa_drive_backward">Reverse</string>
+    <string name="rlb_parkassist_apa_maneuver_finished">Maneuver completed</string>
+    <string name="rlb_parkassist_apa_go_forward_or_backward">Go forward or reverse</string>
+    <string name="rlb_parkassist_apa_maneuver_finished_take_back_control">Maneuver finished, take back control</string>
+    <string name="rlb_parkassist_apa_settings_title">Select your default maneuver</string>
+    <string name="rlb_parkassist_apa_settings_perpendicular">Perpendicular</string>
+    <string name="rlb_parkassist_apa_settings_parallel">Parallel</string>
+    <!--endregion-->
+
+    <!--region Fapk labels-->
+    <string name="rlb_parkassist_fapk_start">Start</string>
+    <string name="rlb_parkassist_fapk_stop_button">Stop</string>
+    <string name="rlb_parkassist_fapk_drive_forward">Drive forward</string>
+    <string name="rlb_parkassist_fapk_drive_forward_slightly">Drive forward slightly</string>
+    <string name="rlb_parkassist_fapk_select_side">Select indicator</string>
+    <string name="rlb_parkassist_fapk_stop">Stop</string>
+    <string name="rlb_parkassist_fapk_press_start_button">Press Start Button</string>
+    <string name="rlb_parkassist_fapk_engage_forward_gear">Engage forward gear</string>
+    <string name="rlb_parkassist_fapk_maneuver_finished">Maneuver completed</string>
+    <string name="rlb_parkassist_fapk_engage_rear_gear">Engage rear gear</string>
+    <string name="rlb_parkassist_fapk_stop_after_rear_gear_engaged">Stop</string>
+    <string name="rlb_parkassist_fapk_accelerate_and_hold_the_pedal_pressed">Accelerate and hold your foot on the accelerator</string>
+    <string name="rlb_parkassist_fapk_maneuver_finished_release_the_accelerator_pedal">Maneuver completed, release the accelerator pedal</string>
+    <string name="rlb_parkassist_fapk_maneuver_finished_take_back_control">Maneuver finished, take back control</string>
+    <string name="rlb_parkassist_fapk_hold_the_accelerator_pedal_pressed">Hold your foot on the accelerator</string>
+    <!--endregion-->
+
+    <!--region Warning labels-->
+    <string name="rlb_parkassist_warning_speed">Vehicle speed too high. Camera image not available</string>
+    <string name="rlb_parkassist_warning_camera_misaligned">Camera misaligned</string>
+    <string name="rlb_parkassist_warning_camera_soiled">Camera without visibility</string>
+    <string name="rlb_parkassist_warning_trailer_not_detected">Trailer not connected</string>
+    <string name="rlb_parkassist_warning_obstacle_detected">Obstacle detected, view not available</string>
+    <string name="rlb_parkassist_warning_access_limited">Please wait between two activations</string>
+    <!--endregion-->
+
+    <!--region Apa only HFP Warning labels-->
+    <string name="rlb_parkassist_apa_hfp_warning_maneuver_suspended_until_restart_engine">Park maneuver suspended. To resume, restart engine</string>
+    <string name="rlb_parkassist_apa_hfp_warning_maneuver_suspended_brake_to_stop">Brake to stop the vehicle, maneuver suspended</string>
+    <!--endregion-->
+
+    <!--region Apa only FAPK Warning labels-->
+    <string name="rlb_parkassist_apa_fapk_warning_brake_to_resume_maneuver">To resume park maneuver, brake</string>
+    <string name="rlb_parkassist_apa_fapk_warning_feature_unavailable_vehicle_not_stopped">Vehicule not stopped, park maneuver canceled</string>
+    <string name="rlb_parkassist_apa_fapk_warning_maneuver_suspended_release_accelerator_pedal">Park maneuver suspended, to resume remove your feet from the accelerator pedal</string>
+    <string name="rlb_parkassist_apa_fapk_warning_maneuver_canceled_release_accelerator_pedal">Park maneuver canceled, release the accelerator pedal</string>
+    <string name="rlb_parkassist_apa_fapk_warning_maneuver_canceled_gear_shift_activated">Gear shift activated, park maneuver canceled.</string>
+    <string name="rlb_parkassist_apa_fapk_warning_maneuver_suspended_gear_shift_activated">Gear shift activated, park maneuver suspended. To resume remove your hands from shifter</string>
+    <string name="rlb_parkassist_apa_fapk_warning_feature_unavailable_mirrors_folded">Feature Unavailable Mirrors Folded</string>
+    <string name="rlb_parkassist_apa_fabk_warning_maneuver_canceled_mirrors_folded">Maneuver Canceled Mirrors Folded</string>
+    <!--endregion-->
+
+    <!--region Apa HFP Warning labels-->
+    <string name="rlb_parkassist_apa_hfp_warning_maneuver_suspended_door_open">Door open, park maneuver suspended. To resume, close the door</string>
+    <string name="rlb_parkassist_apa_hfp_warning_maneuver_suspended_hand_on_wheel">Hand on wheel, park maneuver suspended. To resume, remove hands from the steering wheel</string>
+    <string name="rlb_parkassist_apa_hfp_warning_maneuver_suspended">Park maneuver suspended</string>
+    <string name="rlb_parkassist_apa_hfp_warning_maneuver_suspended_obstacle_on_path">Obstacle on path, maneuver suspended</string>
+    <string name="rlb_parkassist_apa_hfp_warning_maneuver_canceled">Park maneuver canceled</string>
+    <string name="rlb_parkassist_apa_hfp_warning_maneuver_unavailable_hand_on_wheel">Hand on wheel, park maneuver unavailable. Remove your hands from the steering wheel to start the maneuver</string>
+    <string name="rlb_parkassist_apa_hfp_warning_maneuver_unavailable_door_open">Door open, park maneuver unavailable. Close the door to start the maneuver</string>
+    <string name="rlb_parkassist_apa_hfp_warning_maneuver_unavailable_engine_stopped">Engine stopped, park maneuver unavailable. Start the engine to start the maneuver</string>
+    <string name="rlb_parkassist_apa_hfp_warning_feature_unavailable_rear_gear_engaged">Rear gear engaged, Easy Park Assist unavailable</string>
+    <string name="rlb_parkassist_apa_hfp_warning_feature_unavailable_speed_too_high">Speed too high, Easy Park Assist unavailable</string>
+    <string name="rlb_parkassist_apa_hfp_warning_feature_unavailable">Easy Park Assist unavailable</string>
+    <string name="rlb_parkassist_apa_hfp_warning_feature_unavailable_trailer_detected">Trailer detected, Easy Park Assist unavailable</string>
+    <string name="rlb_parkassist_apa_hfp_warning_feature_unavailable_cruise_control_activated">Adaptive cruise control activated, Easy Park Assist unavailable</string>
+    <string name="rlb_parkassist_apa_hfp_warning_maneuver_canceled_parking_brake">Parking brake tightened, park maneuver canceled</string>
+    <string name="rlb_parkassist_apa_hfp_warning_maneuver_canceled_driver_door_open">Driver door open, park maneuver canceled</string>
+    <string name="rlb_parkassist_apa_hfp_warning_maneuver_canceled_seat_belt_unfasten">Driver seatbelt unfastened, park maneuver canceled</string>
+    <string name="rlb_parkassist_apa_hfp_warning_maneuver_unavailable_parking_brake">Parking brake tightened, to start park maneuver release parking brake</string>
+    <string name="rlb_parkassist_apa_hfp_warning_maneuver_canceled_slope_too_high">Slope too high, park maneuver canceled</string>
+    <string name="rlb_parkassist_apa_hfp_warning_maneuver_unavailable_seat_belt_unfasten">Driver seatbelt unfastened,to start park maneuver fasten seatbelt</string>
+    <string name="rlb_parkassist_apa_hfp_warning_maneuver_unavailable_slope_too_high">Slope too high, park maneuver unavailable</string>
+    <string name="rlb_parkassist_apa_hfp_warning_maneuver_canceled_braking_failure">Braking system failure. Automatic brake unavailable, park maneuver canceled</string>
+    <string name="rlb_parkassist_apa_hfp_warning_maneuver_canceled_take_back_control">Park maneuver canceled</string>
+    <string name="rlb_parkassist_apa_hfp_warning_select_turn_indicator">Select the turn indicator to go out of the parking space</string>
+    <string name="rlb_parkassist_apa_hfp_warning_press_ok_to_start_maneuver">Press OK To Start Maneuver</string>
+    <string name="rlb_parkassist_apa_hfp_warning_maneuver_unavailable_h_152_esc_off">ESC Off, park maneuver unavailable. Reactivate ESC to start the maneuver</string>
+    <string name="rlb_parkassist_apa_hfp_warning_maneuver_canceled_engine_stopped">Engine stopped, park maneuver canceled.</string>
+    <string name="rlb_parkassist_apa_hfp_warning_maneuver_canceled_esc_off">ESC Off, park maneuver canceled.</string>
+    <string name="rlb_parkassist_apa_hfp_warning_maneuver_finished_no_front_obstacle">park maneuver finished with success, no front obstacle.</string>
+    <string name="rlb_parkassist_apa_hfp_warning_maneuver_unavailable_slot_too_small">Maneuver Unavailable Slot Too Small</string>
+    <!--endregion-->
+
+    <!--region Apa FAPK Warning labels-->
+    <string name="rlb_parkassist_apa_fapk_warning_maneuver_suspended_door_open">Door open, park maneuver suspended. To resume, close the door</string>
+    <string name="rlb_parkassist_apa_fapk_warning_maneuver_suspended_hand_on_wheel">Hand on wheel, park maneuver suspended. To resume, remove hands from the steering wheel</string>
+    <string name="rlb_parkassist_apa_fapk_warning_maneuver_suspended">Park maneuver suspended</string>
+    <string name="rlb_parkassist_apa_fapk_warning_maneuver_suspended_obstacle_on_path">Obstacle on path, maneuver suspended</string>
+    <string name="rlb_parkassist_apa_fapk_warning_maneuver_canceled">Park maneuver canceled</string>
+    <string name="rlb_parkassist_apa_fapk_warning_maneuver_unavailable_hand_on_wheel">Hand on wheel, to start park maneuver remove your hands from the steering wheel</string>
+    <string name="rlb_parkassist_apa_fapk_warning_maneuver_unavailable_door_open">Door open, to start park maneuver close the door</string>
+    <string name="rlb_parkassist_apa_fapk_warning_maneuver_unavailable_engine_stopped">Engine stopped, to start park maneuver start the engine.</string>
+    <string name="rlb_parkassist_apa_fapk_warning_feature_unavailable_rear_gear_engaged">Rear gear engaged, Auto Park Assist unavailable</string>
+    <string name="rlb_parkassist_apa_fapk_warning_feature_unavailable_speed_too_high">Speed too high, Auto Park Assist unavailable</string>
+    <string name="rlb_parkassist_apa_fapk_warning_feature_unavailable">Auto Park Assist unavailable</string>
+    <string name="rlb_parkassist_apa_fapk_warning_feature_unavailable_trailer_detected">Trailer detected, Auto Park Assist unavailable</string>
+    <string name="rlb_parkassist_apa_fapk_warning_feature_unavailable_cruise_control_activated">Adaptive cruise control activated, Auto Park Assist unavailable</string>
+    <string name="rlb_parkassist_apa_fapk_warning_maneuver_canceled_parking_brake">Parking brake tightened, park maneuver canceled</string>
+    <string name="rlb_parkassist_apa_fapk_warning_maneuver_canceled_driver_door_open">Driver door open, park maneuver canceled</string>
+    <string name="rlb_parkassist_apa_fapk_warning_maneuver_canceled_seat_belt_unfasten">Driver seatbelt unfastened, park maneuver canceled</string>
+    <string name="rlb_parkassist_apa_fapk_warning_maneuver_unavailable_parking_brake">Parking brake tightened, to start park maneuver release parking brake</string>
+    <string name="rlb_parkassist_apa_fapk_warning_maneuver_canceled_slope_too_high">Slope too high, park maneuver canceled</string>
+    <string name="rlb_parkassist_apa_fapk_warning_maneuver_unavailable_seat_belt_unfasten">Driver seatbelt unfastened,to start park maneuver fasten seatbelt</string>
+    <string name="rlb_parkassist_apa_fapk_warning_maneuver_unavailable_slope_too_high">Slope too high, park maneuver unavailable</string>
+    <string name="rlb_parkassist_apa_fapk_warning_maneuver_canceled_braking_failure">Park maneuver canceled</string>
+    <string name="rlb_parkassist_apa_fapk_warning_maneuver_canceled_take_back_control">Park maneuver canceled</string>
+    <string name="rlb_parkassist_apa_fapk_warning_select_turn_indicator">Select the turn indicator to go out of the parking space</string>
+    <string name="rlb_parkassist_apa_fapk_warning_press_ok_to_start_maneuver">Press OK To Start Maneuver</string>
+    <string name="rlb_parkassist_apa_fapk_warning_maneuver_unavailable_h_152_esc_off">ESC Off, park maneuver unavailable. Reactivate ESC to start the maneuver</string>
+    <string name="rlb_parkassist_apa_fapk_warning_maneuver_canceled_engine_stopped">Engine stopped, park maneuver canceled.</string>
+    <string name="rlb_parkassist_apa_fapk_warning_maneuver_canceled_esc_off">ESC Off, park maneuver canceled.</string>
+    <string name="rlb_parkassist_apa_fapk_warning_maneuver_finished_no_front_obstacle">park maneuver finished with success, no front obstacle.</string>
+    <string name="rlb_parkassist_apa_fapk_warning_maneuver_unavailable_slot_too_small">Maneuver Unavailable Slot Too Small</string>
+    <!--endregion-->
+
+    <!--region Apa button Labels-->
+    <string name="rlb_parkassist_apa_neutral_button_label">Cancel the maneuver</string>
+    <string name="rlb_parkassist_apa_negative_button_label">Cancel the maneuver</string>
+    <!--endregion-->
+
+    <!--region Settings sound type Labels-->
+    <string name="rlb_parkassist_sound_type_1">Pure</string>
+    <string name="rlb_parkassist_sound_type_2">Accurate</string>
+    <string name="rlb_parkassist_sound_type_3">Expressive</string>
+    <!--endregion-->
+
+    <!--region Mvc Labels-->
+    <string name="rlb_parkassist_mvc_manual_mode">Manual Mode</string>
+    <string name="rlb_parkassist_mvc">Multi View Camera</string>
+    <string name="rlb_parkassist_mvc_default_view">Default View</string>
+    <string name="rlb_parkassist_mvc_default_front">Front View</string>
+    <string name="rlb_parkassist_mvc_default_right">Right View</string>
+    <string name="rlb_parkassist_mvc_default_left">Left View</string>
+    <string name="rlb_parkassist_mvc_default_auto">Automatic View</string>
+    <!--endregion-->
+
+</resources>

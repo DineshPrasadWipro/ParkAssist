@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <alliancex.renault.ui.RenaultPreferenceExpandableCategory
+        android:id="@+id/sound_expandable_category"
+        android:key="@string/soundExpandableCategory"
+        android:title="@string/rlb_parkassist_sound"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true">
+
+        <alliancex.renault.ui.RenaultRadioPreference
+            android:id="@+id/sound_type"
+            android:key="@string/soundRadioPreference"
+            app:allowDividerAbove="false"
+            app:allowDividerBelow="false"
+            app:paddingStepStart="1"
+            app:showBackground="true" />
+
+        <alliancex.renault.ui.RenaultSeekBarPreference
+            android:id="@+id/sound_volume"
+            android:key="@string/soundVolume"
+            android:layout="@layout/rl_seekbar_preference_large"
+            android:title="@string/rlb_parkassist_sound_settings_volume"
+            app:allowDividerAbove="false"
+            app:allowDividerBelow="false"
+            app:paddingStepStart="1"
+            app:showBackground="true" />
+
+    </alliancex.renault.ui.RenaultPreferenceExpandableCategory>
+
+</PreferenceScreen>

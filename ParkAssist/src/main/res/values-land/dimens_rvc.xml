@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- STANDARD VIEW GEN1/GEN2 (view cut in 2 parts : camera & sonar) -->
+    <!-- [rvc_standardview-gen1-land][rvc_standardview-land] -->
+    <dimen name="rvc_std_camera_width">764dp</dimen>
+    <dimen name="rvc_std_camera_height">477dp</dimen>
+    <!-- [view_land_1040_477_px] sonar alerts width percentage -->
+    <!-- (h-centered in camera zoning) alerts width / camera width = 496 / 764 = 0.65 -->
+    <item name="rvc_std_alerts_width_percent" format="float" type="dimen">.65</item>
+
+    <!-- SETTINGS VIEW [rvc_settings-land]  -->
+    <!-- [view_land_938_500] margin start from camera indicator = 20 -->
+    <dimen name="rvc_settings_sonar_alerts_margin_start">20dp</dimen>
+    <dimen name="rvc_std_alerts_width">312dp</dimen>
+
+    <!-- [view_land_938_500] sonar alerts width percentage -->
+    <!-- (h-centered in camera zoning) alerts width / camera width = 300 / 560 = 0.64-->
+    <item name="rvc_settings_alerts_width_percent" format="float" type="dimen">.54</item>
+    <!-- [view_land_938_500] sonar alerts height -->
+    <!-- FIXME CCSEXT-19819 RAEB Wrong Image sizing of RCTA/RAEB compared to design 6.3.3 -->
+    <!-- component library provides 60 pixels height icons, requires 40 px here -->
+    <!-- <dimen name="rvc_settings_alerts_height">40dp</dimen> -->
+
+</resources>

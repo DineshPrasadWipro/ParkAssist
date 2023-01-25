@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="hatched_alpha" format="float" type="dimen">0.5</item>
+    <item name="not_hatched_alpha" format="float" type="dimen">1.0</item>
+</resources>

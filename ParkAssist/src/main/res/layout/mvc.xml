@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/mvc_main"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/views_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/rd_car_padding_4"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/rd_grid_padding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/standard_camera_fragment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.renault.car.ui.components.widget.RenaultToggleIconButton
+            android:id="@+id/mvc_rear"
+            style="@style/RenaultToggleIconButton"
+            android:layout_width="@dimen/mvc_main_screen_button_width"
+            android:layout_height="@dimen/rd_icon_size_medium"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/rd_icon_size_small"
+            android:drawableTop="@drawable/ric_adas_avm_rear" />
+
+        <com.renault.car.ui.components.widget.RenaultToggleIconButton
+            android:id="@+id/mvc_front"
+            style="@style/RenaultToggleIconButton"
+            android:layout_width="@dimen/mvc_main_screen_button_width"
+            android:layout_height="@dimen/rd_icon_size_medium"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/rd_icon_size_small"
+            android:drawableTop="@drawable/ric_adas_avm_front" />
+
+        <com.renault.car.ui.components.widget.RenaultToggleIconButton
+            android:id="@+id/mvc_left"
+            style="@style/RenaultToggleIconButton"
+            android:layout_width="@dimen/mvc_main_screen_button_width"
+            android:layout_height="@dimen/rd_icon_size_medium"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/rd_icon_size_small"
+            android:drawableTop="@drawable/ric_adas_avm_left_side" />
+
+        <com.renault.car.ui.components.widget.RenaultToggleIconButton
+            android:id="@+id/mvc_right"
+            style="@style/RenaultToggleIconButton"
+            android:layout_width="@dimen/mvc_main_screen_button_width"
+            android:layout_height="@dimen/rd_icon_size_medium"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/rd_icon_size_small"
+            android:drawableTop="@drawable/ric_adas_avm_right_side" />
+    </LinearLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/standard_camera_fragment"
+        android:name="com.renault.parkassist.ui.camera.CameraFragment"
+        android:layout_width="@dimen/mvc_main_camera_view_width"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toStartOf="@id/sonar_fragment"
+        app:layout_constraintStart_toEndOf="@id/views_layout"
+        tools:layout="@layout/fragment_ovl_rvc_std" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/sonar_fragment"
+        android:name="com.renault.parkassist.ui.sonar.SonarFragment"
+        android:layout_width="@dimen/mvc_main_sonar_view_width"
+        android:layout_height="@dimen/mvc_main_sonar_view_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/standard_camera_fragment"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/sonar_rvc"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <com.renault.car.ui.components.widget.RenaultToggleIconButton
+        android:id="@+id/mvc_auto_zoom"
+        style="@style/RenaultToggleIconButton"
+        android:layout_width="@dimen/mvc_main_screen_button_width"
+        android:layout_height="@dimen/rd_icon_size_medium"
+        android:layout_gravity="bottom"
+        android:layout_marginEnd="@dimen/rd_car_margin"
+        android:layout_marginStart="@dimen/rd_car_margin"
+        android:layout_marginBottom="@dimen/rd_car_padding_6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/sonar_fragment"
+        app:layout_constraintStart_toStartOf="@+id/sonar_fragment"
+        app:layout_constraintTop_toBottomOf="@+id/sonar_fragment"
+        app:layout_constraintStart_toEndOf="@+id/standard_camera_fragment"
+        android:drawableTop="@drawable/ric_settings_zoom_auto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

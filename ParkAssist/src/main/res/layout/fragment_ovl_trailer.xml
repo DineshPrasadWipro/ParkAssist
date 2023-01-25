@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/camera_ovl_trailer_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/rd_parkassist_camera_ovl_padding"
+    tools:background="@color/tools_purple_alpha_50">
+
+    <tag
+        android:id="@id/uxTag"
+        android:value="" />
+
+    <com.renault.parkassist.ui.camera.CameraIndicatorView
+        android:id="@+id/elt_camera_indicator"
+        style="@style/RenaultIconView"
+        android:layout_gravity="top|left"
+        android:background="@drawable/pdr_overlay_background"
+        android:src="@drawable/ric_adas_avm_rear"
+        tools:ignore="RtlHardcoded" />
+
+    <alliancex.renault.ui.RenaultTextView
+        android:id="@+id/elt_boot_status_info"
+        style="@style/RenaultTextView.Body2"
+        android:layout_width="@dimen/rd_button_width_2"
+        android:layout_height="@dimen/rd_button_height"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/pdr_overlay_background"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="@string/rlb_parkassist_boot_info" />
+</FrameLayout>

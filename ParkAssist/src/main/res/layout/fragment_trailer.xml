@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_trailer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <tag
+        android:id="@id/uxTag"
+        android:value="@string/trailer_view_ux" />
+
+    <fragment
+        android:id="@+id/trailer_camera_fragment"
+        android:name="com.renault.parkassist.ui.camera.CameraFragment"
+        android:layout_width="@dimen/trailer_camera_width"
+        android:layout_height="@dimen/trailer_camera_height"
+        android:layout_gravity="center_horizontal"
+        tools:layout="@layout/fragment_ovl_trailer" />
+
+    <alliancex.renault.ui.RenaultTextView
+        android:id="@+id/trailer_duration"
+        style="@style/RenaultTextView.Body2.Secondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="@string/rlb_parkassist_trailer_duration" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <alliancex.renault.ui.RenaultTextView
+        android:id="@+id/trailer_disclaimer"
+        style="@style/RenaultTextView.Body1.Compressed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/trailer_disclaimer_margin_bottom"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="@string/rlb_parkassist_trailer_disclaimer" />
+
+</LinearLayout>

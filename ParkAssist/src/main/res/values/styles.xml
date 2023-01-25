@@ -1,0 +1,57 @@
+<resources>
+
+    <style name="DialogStyle" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="colorAccent">?attr/gradientStop</item>
+    </style>
+
+    <style name="PopupDialogStyle">
+        <item name="android:background">@drawable/popup</item>
+    </style>
+
+    <style name="ParkAssistDialogTheme" parent="RenaultDialogTheme">
+        <item name="android:backgroundDimAmount">0</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:dialogTheme">@style/ParkAssistDialogTheme</item>
+        <item name="carUiBaseLayout">true</item>
+        <item name="carUiToolbar">true</item>
+    </style>
+
+    <style name="ParkAssistToggleButton.Stop.Width2" parent="Renault.Widget.ToggleButton.Stop.Width2"/>
+    <style name="ParkAssistToggleButton.Stop.Width4" parent="Renault.Widget.ToggleButton.Stop.Width4"/>
+    <style name="Renault.Widget.ToggleButton.Stop">
+        <item name="android:background">@drawable/pdr_toggle_background_stop</item>
+        <item name="android:textColor">@color/pcs_check_label_stop</item>
+    </style>
+    <style name="Renault.Widget.ToggleButton.Stop.Width2">
+        <item name="android:layout_width">@dimen/rd_button_width_2</item>
+    </style>
+    <style name="Renault.Widget.ToggleButton.Stop.Width4">
+        <item name="android:layout_width">@dimen/rd_button_width_4</item>
+    </style>
+
+    <style name="ParkAssistToggleButton.Start.Width2" parent="Renault.Widget.ToggleButton.Validation.Width2"/>
+    <style name="ParkAssistToggleButton.Start.Width4" parent="Renault.Widget.ToggleButton.Validation.Width4"/>
+
+    <style name="Renault.Widget.ToggleButton.Validation.Width4">
+        <item name="android:layout_width">@dimen/rd_button_width_4</item>
+    </style>
+    <style name="ParkAssistTheme.WindowOverlay" parent="RenaultTheme.WindowOverlay">
+        <!-- Drawable to use as the overall window background. -->
+        <item name="android:windowBackground">@color/rc_transparent</item>
+        <item name="carUiBaseLayout">true</item>
+        <item name="carUiToolbar">true</item>
+    </style>
+    <!--    style override from component library-->
+    <style name="RenaultRadioPreferenceButton" parent="RenaultRadioButton.WithText.Mex">
+        <item name="android:layout_height">@dimen/rd_preference_height_min_height</item>
+        <item name="android:minHeight">@dimen/rd_preference_height_min_height</item>
+        <item name="android:soundEffectsEnabled">false</item>
+    </style>
+</resources>

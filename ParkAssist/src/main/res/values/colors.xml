@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="gauge_stop">@color/rc_hot</color>
+    <color name="gauge_normal">@color/rc_validation</color>
+
+    <!-- /!\ Layout tools colors: do NOT use for production -->
+    <color name="tools_purple_alpha_50">#7fd500ff</color>
+    <color name="tools_cerulean_blue">#0078f0</color>
+    <color name="tools_black">#000000</color>
+    <color name="tools_yellow">#FFFF00</color>
+    <color name="tools_red">#ff0000</color>
+    <color name="tools_french_blue_alpha_70">#B33F72B5</color>
+</resources>

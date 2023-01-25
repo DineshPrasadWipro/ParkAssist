@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_apa_guidance_illustration"
+    android:layout_width="@dimen/apa_guidance_picture_width"
+    android:layout_height="@dimen/apa_guidance_picture_height"
+    android:background="@android:color/background_dark"
+    tools:layout_height="@dimen/apa_guidance_picture_height"
+    tools:layout_width="@dimen/apa_guidance_picture_width">
+
+    <ImageView
+        android:id="@+id/parallel_left_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rimg_bckg_apa_parallel_left" />
+
+    <ImageView
+        android:id="@+id/parallel_left_parking_large"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/apa_guidance_parallel_left_parking_large_start"
+        android:layout_marginTop="@dimen/apa_guidance_parallel_left_parking_large_top"
+        android:layout_marginRight="@dimen/apa_guidance_parallel_left_parking_large_end"
+        android:layout_marginBottom="@dimen/apa_guidance_parallel_left_parking_large_bottom"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rimg_adas_parking_large" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parallel_left_vehicle_center_cut"
+        android:layout_width="@dimen/apa_guidance_vehicle_center_cut_view_width"
+        android:layout_height="@dimen/apa_guidance_vehicle_center_cut_view_height"
+        android:layout_marginLeft="@dimen/apa_guidance_vehicle_center_cut_parallel_left_start"
+        android:layout_marginRight="@dimen/apa_guidance_vehicle_center_cut_parallel_left_end"
+        android:layout_marginBottom="@dimen/apa_guidance_vehicle_center_cut_parallel_left_bottom"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <fragment
+            android:name="com.renault.parkassist.ui.apa.hfp.HfpGuidanceVehicleCenterCutFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_guidance_vehicle_center_cut" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parallel_left_vehicle_center__front"
+        android:layout_width="@dimen/apa_guidance_vehicle_center_view_width"
+        android:layout_height="@dimen/apa_guidance_vehicle_center_view_height"
+        android:layout_marginLeft="@dimen/apa_guidance_vehicle_center_parallel_left_start"
+        android:layout_marginTop="@dimen/apa_guidance_vehicle_center_parallel_front_top"
+        android:layout_marginRight="@dimen/apa_guidance_vehicle_center_parallel_left_end"
+        android:layout_marginBottom="@dimen/apa_guidance_vehicle_center_parallel_front_bottom"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <fragment
+            android:name="com.renault.parkassist.ui.apa.hfp.HfpGuidanceVehicleCenterFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_guidance_vehicle_center" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parallel_left_vehicle_center__back"
+        android:layout_width="@dimen/apa_guidance_vehicle_center_view_width"
+        android:layout_height="@dimen/apa_guidance_vehicle_center_view_height"
+        android:layout_marginLeft="@dimen/apa_guidance_vehicle_center_parallel_left_start"
+        android:layout_marginTop="@dimen/apa_guidance_vehicle_center_parallel_back_top"
+        android:layout_marginRight="@dimen/apa_guidance_vehicle_center_parallel_left_end"
+        android:layout_marginBottom="@dimen/apa_guidance_vehicle_center_parallel_back_bottom"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <fragment
+            android:name="com.renault.parkassist.ui.apa.hfp.HfpGuidanceVehicleCenterFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_guidance_vehicle_center" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/parallel_left_parking_finished"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/apa_guidance_parallel_left_parking_finished_start"
+        android:layout_marginTop="@dimen/apa_guidance_parallel_left_parking_finished_top"
+        android:layout_marginRight="@dimen/apa_guidance_parallel_left_parking_finished_end"
+        android:layout_marginBottom="@dimen/apa_guidance_parallel_left_parking_finished_bottom"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rimg_adas_parking_finished" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parallel_left_vehicle_center__center"
+        android:layout_width="@dimen/apa_guidance_vehicle_center_view_width"
+        android:layout_height="@dimen/apa_guidance_vehicle_center_view_height"
+        android:layout_marginLeft="@dimen/apa_guidance_vehicle_center_parallel_left_start"
+        android:layout_marginTop="@dimen/apa_guidance_vehicle_center_parallel_center_top"
+        android:layout_marginRight="@dimen/apa_guidance_vehicle_center_parallel_left_end"
+        android:layout_marginBottom="@dimen/apa_guidance_vehicle_center_parallel_center_bottom"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <fragment
+            android:name="com.renault.parkassist.ui.apa.hfp.HfpGuidanceVehicleCenterFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_guidance_vehicle_center" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.renault.parkassist.ui.apa.hfp.HfpGuidanceVehicleLeftView
+        android:id="@+id/parallel_left_vehicle_left"
+        android:layout_width="@dimen/apa_guidance_vehicle_left_view_width"
+        android:layout_height="@dimen/apa_guidance_vehicle_left_view_height"
+        android:layout_marginLeft="@dimen/apa_guidance_vehicle_left_parallel_left_start"
+        android:layout_marginTop="@dimen/apa_guidance_vehicle_left_parallel_left_top"
+        android:layout_marginRight="@dimen/apa_guidance_vehicle_left_parallel_left_end"
+        android:layout_marginBottom="@dimen/apa_guidance_vehicle_left_parallel_left_bottom"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/parallel_right_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rimg_bckg_apa_parallel_right" />
+
+    <ImageView
+        android:id="@+id/parallel_right_parking_large"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/apa_guidance_parallel_right_parking_large_start"
+        android:layout_marginTop="@dimen/apa_guidance_parallel_right_parking_large_top"
+        android:layout_marginRight="@dimen/apa_guidance_parallel_right_parking_large_end"
+        android:layout_marginBottom="@dimen/apa_guidance_parallel_right_parking_large_bottom"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rimg_adas_parking_large" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parallel_right_vehicle_center_cut"
+        android:layout_width="@dimen/apa_guidance_vehicle_center_cut_view_width"
+        android:layout_height="@dimen/apa_guidance_vehicle_center_cut_view_height"
+        android:layout_marginLeft="@dimen/apa_guidance_vehicle_center_cut_parallel_right_start"
+        android:layout_marginRight="@dimen/apa_guidance_vehicle_center_cut_parallel_right_end"
+        android:layout_marginBottom="@dimen/apa_guidance_vehicle_center_cut_parallel_right_bottom"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <fragment
+            android:name="com.renault.parkassist.ui.apa.hfp.HfpGuidanceVehicleCenterCutFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_guidance_vehicle_center_cut" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parallel_right_vehicle_center__front"
+        android:layout_width="@dimen/apa_guidance_vehicle_center_view_width"
+        android:layout_height="@dimen/apa_guidance_vehicle_center_view_height"
+        android:layout_marginLeft="@dimen/apa_guidance_vehicle_center_parallel_right_start"
+        android:layout_marginTop="@dimen/apa_guidance_vehicle_center_parallel_front_top"
+        android:layout_marginRight="@dimen/apa_guidance_vehicle_center_parallel_right_end"
+        android:layout_marginBottom="@dimen/apa_guidance_vehicle_center_parallel_front_bottom"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <fragment
+            android:name="com.renault.parkassist.ui.apa.hfp.HfpGuidanceVehicleCenterFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_guidance_vehicle_center" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parallel_right_vehicle_center__back"
+        android:layout_width="@dimen/apa_guidance_vehicle_center_view_width"
+        android:layout_height="@dimen/apa_guidance_vehicle_center_view_height"
+        android:layout_marginLeft="@dimen/apa_guidance_vehicle_center_parallel_right_start"
+        android:layout_marginTop="@dimen/apa_guidance_vehicle_center_parallel_back_top"
+        android:layout_marginRight="@dimen/apa_guidance_vehicle_center_parallel_right_end"
+        android:layout_marginBottom="@dimen/apa_guidance_vehicle_center_parallel_back_bottom"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <fragment
+            android:name="com.renault.parkassist.ui.apa.hfp.HfpGuidanceVehicleCenterFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_guidance_vehicle_center" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/parallel_right_parking_finished"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/apa_guidance_parallel_right_parking_finished_start"
+        android:layout_marginTop="@dimen/apa_guidance_parallel_right_parking_finished_top"
+        android:layout_marginRight="@dimen/apa_guidance_parallel_right_parking_finished_end"
+        android:layout_marginBottom="@dimen/apa_guidance_parallel_right_parking_finished_bottom"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rimg_adas_parking_finished" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parallel_right_vehicle_center__center"
+        android:layout_width="@dimen/apa_guidance_vehicle_center_view_width"
+        android:layout_height="@dimen/apa_guidance_vehicle_center_view_height"
+        android:layout_marginLeft="@dimen/apa_guidance_vehicle_center_parallel_right_start"
+        android:layout_marginTop="@dimen/apa_guidance_vehicle_center_parallel_center_top"
+        android:layout_marginRight="@dimen/apa_guidance_vehicle_center_parallel_right_end"
+        android:layout_marginBottom="@dimen/apa_guidance_vehicle_center_parallel_center_bottom"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <fragment
+            android:name="com.renault.parkassist.ui.apa.hfp.HfpGuidanceVehicleCenterFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_guidance_vehicle_center" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parallel_right_vehicle_right"
+        android:layout_width="@dimen/apa_guidance_vehicle_right_view_width"
+        android:layout_height="@dimen/apa_guidance_vehicle_right_view_height"
+        android:layout_marginLeft="@dimen/apa_guidance_vehicle_right_parallel_left_start"
+        android:layout_marginTop="@dimen/apa_guidance_vehicle_right_parallel_left_top"
+        android:layout_marginRight="@dimen/apa_guidance_vehicle_right_parallel_left_end"
+        android:layout_marginBottom="@dimen/apa_guidance_vehicle_right_parallel_left_bottom"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.renault.parkassist.ui.apa.hfp.HfpGuidanceVehicleRightView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/perpendicular_center_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rimg_bckg_apa_perpendicular_center" />
+
+    <ImageView
+        android:id="@+id/perpendicular_center_parking_finished"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/apa_guidance_perpendicular_center_parking_finished_start"
+        android:layout_marginTop="@dimen/apa_guidance_perpendicular_center_parking_finished_top"
+        android:layout_marginRight="@dimen/apa_guidance_perpendicular_center_parking_finished_end"
+        android:layout_marginBottom="@dimen/apa_guidance_perpendicular_center_parking_finished_bottom"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rimg_adas_parking_finished" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/perpendicular_vehicle_center_park"
+        android:layout_width="@dimen/apa_guidance_vehicle_center_park_view_width"
+        android:layout_height="@dimen/apa_guidance_vehicle_center_park_view_height"
+        android:layout_marginLeft="@dimen/apa_guidance_vehicle_center_park_perpendicular_start"
+        android:layout_marginTop="@dimen/apa_guidance_vehicle_center_park_perpendicular_top"
+        android:layout_marginRight="@dimen/apa_guidance_vehicle_center_park_perpendicular_end"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.renault.parkassist.ui.apa.hfp.HfpGuidanceVehicleCenterParkView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/negative_margin_view"
+        android:layout_width="1dp"
+        android:layout_height="@dimen/apa_guidance_vehicle_center_front_negative_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/perpendicular_vehicle_center_front"
+        android:layout_width="@dimen/apa_guidance_vehicle_center_front_view_width"
+        android:layout_height="@dimen/apa_guidance_vehicle_center_front_view_height"
+        android:layout_marginLeft="@dimen/apa_guidance_vehicle_center_front_perpendicular_start"
+        android:layout_marginTop="@dimen/apa_guidance_vehicle_center_front_perpendicular_top"
+        android:layout_marginRight="@dimen/apa_guidance_vehicle_center_front_perpendicular_end"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/negative_margin_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <fragment
+            android:name="com.renault.parkassist.ui.apa.hfp.HfpGuidanceVehicleCenterFrontFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_guidance_vehicle_center_front" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/perpendicular_vehicle_center_front__stop"
+        android:layout_width="@dimen/apa_guidance_vehicle_center_front_view_width"
+        android:layout_height="@dimen/apa_guidance_vehicle_center_front_view_height"
+        android:layout_marginLeft="@dimen/apa_guidance_vehicle_center_front_perpendicular_start"
+        android:layout_marginRight="@dimen/apa_guidance_vehicle_center_front_perpendicular_end"
+        android:layout_marginBottom="@dimen/apa_guidance_vehicle_center_front_stop_perpendicular_bottom"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <fragment
+            android:name="com.renault.parkassist.ui.apa.hfp.HfpGuidanceVehicleCenterFrontFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_guidance_vehicle_center_front" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/perpendicular_vehicle_center_back"
+        android:layout_width="@dimen/apa_guidance_vehicle_center_back_view_width"
+        android:layout_height="@dimen/apa_guidance_vehicle_center_back_view_height"
+        android:layout_marginLeft="@dimen/apa_guidance_vehicle_center_back_perpendicular_start"
+        android:layout_marginTop="@dimen/apa_guidance_vehicle_center_back_perpendicular_top"
+        android:layout_marginRight="@dimen/apa_guidance_vehicle_center_back_perpendicular_end"
+        android:layout_marginBottom="@dimen/apa_guidance_vehicle_center_back_perpendicular_bottom"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <fragment
+            android:name="com.renault.parkassist.ui.apa.hfp.HfpGuidanceVehicleCenterBackFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_guidance_vehicle_center_back" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/perpendicular_vehicle_center_back__stop"
+        android:layout_width="@dimen/apa_guidance_vehicle_center_back_view_width"
+        android:layout_height="@dimen/apa_guidance_vehicle_center_back_view_height"
+        android:layout_marginLeft="@dimen/apa_guidance_vehicle_center_back_stop_perpendicular_start"
+        android:layout_marginTop="@dimen/apa_guidance_vehicle_center_back_stop_perpendicular_top"
+        android:layout_marginRight="@dimen/apa_guidance_vehicle_center_back_stop_perpendicular_end"
+        android:layout_marginBottom="@dimen/apa_guidance_vehicle_center_back_stop_perpendicular_bottom"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <fragment
+            android:name="com.renault.parkassist.ui.apa.hfp.HfpGuidanceVehicleCenterBackFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_guidance_vehicle_center_back" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/perpendicular_left_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rimg_bckg_apa_perpendicular_left" />
+
+    <ImageView
+        android:id="@+id/perpendicular_left_parking_large"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/apa_guidance_perpendicular_left_parking_large_start"
+        android:layout_marginTop="@dimen/apa_guidance_perpendicular_left_parking_large_top"
+        android:layout_marginRight="@dimen/apa_guidance_perpendicular_left_parking_large_end"
+        android:layout_marginBottom="@dimen/apa_guidance_perpendicular_left_parking_large_bottom"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rimg_adas_parking_large" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/perpendicular_left_vehicle_center_cut"
+        android:layout_width="@dimen/apa_guidance_vehicle_center_cut_view_width"
+        android:layout_height="@dimen/apa_guidance_vehicle_center_cut_view_height"
+        android:layout_marginLeft="@dimen/apa_guidance_vehicle_center_cut_perpendicular_left_start"
+        android:layout_marginRight="@dimen/apa_guidance_vehicle_center_cut_perpendicular_left_end"
+        android:layout_marginBottom="@dimen/apa_guidance_vehicle_center_cut_perpendicular_left_bottom"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <fragment
+            android:name="com.renault.parkassist.ui.apa.hfp.HfpGuidanceVehicleCenterCutFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_guidance_vehicle_center_cut" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/perpendicular_right_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rimg_bckg_apa_perpendicular_right" />
+
+    <ImageView
+        android:id="@+id/perpendicular_right_parking_large"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/apa_guidance_perpendicular_right_parking_large_start"
+        android:layout_marginTop="@dimen/apa_guidance_perpendicular_right_parking_large_top"
+        android:layout_marginRight="@dimen/apa_guidance_perpendicular_right_parking_large_end"
+        android:layout_marginBottom="@dimen/apa_guidance_perpendicular_right_parking_large_bottom"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rimg_adas_parking_large" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/perpendicular_right_vehicle_center_cut"
+        android:layout_width="@dimen/apa_guidance_vehicle_center_cut_view_width"
+        android:layout_height="@dimen/apa_guidance_vehicle_center_cut_view_height"
+        android:layout_marginLeft="@dimen/apa_guidance_vehicle_center_cut_perpendicular_right_start"
+        android:layout_marginRight="@dimen/apa_guidance_vehicle_center_cut_perpendicular_right_end"
+        android:layout_marginBottom="@dimen/apa_guidance_vehicle_center_cut_perpendicular_right_bottom"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <fragment
+            android:name="com.renault.parkassist.ui.apa.hfp.HfpGuidanceVehicleCenterCutFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_guidance_vehicle_center_cut" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

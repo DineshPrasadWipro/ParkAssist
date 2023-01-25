@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- TRAILER VIEW -->
+    <dimen name="trailer_camera_width">552dp</dimen>
+    <dimen name="trailer_camera_height">440dp</dimen>
+
+</resources>

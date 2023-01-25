@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fullscreen_navigation"
+    android:label="fullscreen_navigation"
+    app:startDestination="@+id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.renault.parkassist.ui.SplashFragment"
+        android:label="Blankfragment" />
+
+    <!--  Surround Navigation   -->
+    <fragment
+        android:id="@+id/rvcFragment"
+        android:name="com.renault.parkassist.ui.rvc.RvcFragment" />
+    <fragment
+        android:id="@+id/avmFragment"
+        android:name="com.renault.parkassist.ui.avm.AvmFragment" />
+    <fragment
+        android:id="@+id/mvcFragment"
+        android:name="com.renault.parkassist.ui.mvc.MvcFragment" />
+    <fragment
+        android:id="@+id/mvcSettings"
+        android:name="com.renault.parkassist.ui.mvc.MvcSettingsFragment" />
+    <fragment
+        android:id="@+id/dealerFragment"
+        android:name="com.renault.parkassist.ui.dealer.DealerFragment"
+        android:label="DealerFragment" />
+    <fragment
+        android:id="@+id/avmSettings"
+        android:name="com.renault.parkassist.ui.avm.AvmSettingsFragment" />
+    <fragment
+        android:id="@+id/rvcSettings"
+        android:name="com.renault.parkassist.ui.rvc.RvcSettingsFragment" />
+    <fragment
+        android:id="@+id/trailerFragment"
+        android:name="com.renault.parkassist.ui.trailer.TrailerFragment" />
+
+    <!-- APA Navigation-->
+    <fragment
+        android:id="@+id/avmHfpScanningFragment"
+        android:name="com.renault.parkassist.ui.apa.hfp.AvmHfpScanningFragment"
+        android:label="AvmHfpFragment" />
+    <fragment
+        android:id="@+id/sonarHfpScanningFragment"
+        android:name="com.renault.parkassist.ui.apa.hfp.RvcHfpScanningFragment"
+        android:label="SonarHfpFragment" />
+    <fragment
+        android:id="@+id/RvcHfpGuidanceFragment"
+        android:name="com.renault.parkassist.ui.apa.hfp.RvcHfpGuidanceFragment"
+        android:label="RvcHfpGuidanceFragment" />
+    <fragment
+        android:id="@+id/AvmHfpGuidanceFragment"
+        android:name="com.renault.parkassist.ui.apa.hfp.AvmHfpGuidanceFragment"
+        android:label="AvmHfpGuidanceFragment" />
+    <fragment
+        android:id="@+id/fapkFragment"
+        android:name="com.renault.parkassist.ui.apa.fapk.FapkFragment"
+        android:label="FapkFragment" />
+    <fragment
+        android:id="@+id/avmHfpSettingsFragment"
+        android:name="com.renault.parkassist.ui.apa.hfp.AvmHfpSettingsFragment"
+        android:label="AvmHfpSettingsFragment" />
+    <fragment
+        android:id="@+id/sonarHfpSettingsFragment"
+        android:name="com.renault.parkassist.ui.apa.hfp.RvcHfpSettingsFragment"
+        android:label="SonarHfpSettingsFragment" />
+    <fragment
+        android:id="@+id/fapkSettingsFragment"
+        android:name="com.renault.parkassist.ui.apa.fapk.FapkSettingsFragment"
+        android:label="FapkSettingsFragment" />
+    <action
+        android:id="@+id/action_to_rvcHfpGuidanceFragment"
+        app:destination="@id/RvcHfpGuidanceFragment"
+        app:popUpTo="@id/RvcHfpGuidanceFragment" />
+    <action
+        android:id="@+id/action_to_avmHfpGuidanceFragment"
+        app:destination="@id/AvmHfpGuidanceFragment"
+        app:popUpTo="@id/AvmHfpGuidanceFragment" />
+    <action
+        android:id="@+id/action_to_sonarHfpScanningFragment"
+        app:destination="@id/sonarHfpScanningFragment"
+        app:popUpTo="@id/sonarHfpScanningFragment" />
+    <action
+        android:id="@+id/action_to_avmHfpScanningFragment"
+        app:destination="@id/avmHfpScanningFragment"
+        app:popUpTo="@id/avmHfpScanningFragment" />
+    <action
+        android:id="@+id/action_to_fapkFragment"
+        app:destination="@id/fapkFragment"
+        app:popUpTo="@id/fapkFragment" />
+    <action
+        android:id="@+id/action_to_sonarHfpSettingsFragment"
+        app:destination="@id/sonarHfpSettingsFragment" />
+    <action
+        android:id="@+id/action_to_avmHfpSettingsFragment"
+        app:destination="@id/avmHfpSettingsFragment" />
+    <action
+        android:id="@+id/action_to_fapkSettingsFragment"
+        app:destination="@id/fapkSettingsFragment" />
+    <action
+        android:id="@+id/action_to_mvc_main"
+        app:destination="@id/mvcFragment" />
+
+</navigation>

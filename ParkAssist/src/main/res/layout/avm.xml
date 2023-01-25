@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/avm_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:background="@drawable/ic_grid_port">
+
+    <tag
+        android:id="@id/uxTag"
+        android:value="@string/avm_view_ux" />
+
+    <alliancex.renault.ui.RenaultTextView
+        android:id="@+id/elt_avm_3d_info"
+        style="@style/RenaultTextView.Body2.Secondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/avm_disclaimer_margin_bottom"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="@string/rlb_parkassist_three_d_info"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/elt_avm_disclaimer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:visibility="visible" />
+
+    <fragment
+        android:id="@+id/elt_avm_camera_view_container"
+        android:name="com.renault.parkassist.ui.camera.CameraFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toTopOf="@id/elt_avm_disclaimer"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="PxUsage"
+        tools:layout="@layout/fragment_ovl_avm_std" />
+
+    <alliancex.renault.ui.RenaultTextView
+        android:id="@+id/elt_avm_disclaimer"
+        style="@style/RenaultTextView.Body1.Compressed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/rd_vertical_spacing"
+        android:gravity="center"
+        android:text="@string/rlb_parkassist_avm_disclaimer"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

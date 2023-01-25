@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/rlb_parkassist_camera_settings">
+    <com.renault.car.ui.components.preference.RenaultRadioPreference
+        android:dialogTitle="@string/rlb_parkassist_mvc_default_view"
+        android:entries="@array/mvc_default_view_radio_preferences"
+        android:entryValues="@array/mvc_default_view_radio_preferences_values"
+        android:key="viewRadio"
+        android:title="@string/rlb_parkassist_mvc_default_view" />
+</PreferenceScreen>

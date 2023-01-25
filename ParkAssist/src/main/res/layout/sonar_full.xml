@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <fragment
+        android:id="@+id/sonar_sensor_fragment"
+        android:name="com.renault.parkassist.ui.sonar.SonarSensorBasicFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/sonar_sensor_basic_layout" />
+
+
+    <alliancex.renault.ui.RenaultIconView
+        android:id="@+id/elt_sonar_easypark"
+        style="@style/RenaultIconView"
+        android:src="@drawable/ric_adas_park_assist_easypark"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="@dimen/sonar_easypark_horizontal_bias"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="@dimen/sonar_easypark_vertical_bias" />
+
+    <fragment
+        android:id="@+id/sonar_mute_view"
+        android:name="com.renault.parkassist.ui.sonar.SonarMuteFragment"
+        android:layout_width="@dimen/rd_button_width_1"
+        android:layout_height="@dimen/rd_button_width_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="@dimen/sonar_mute_vertical_bias"
+        tools:layout="@layout/sonar_mute" />
+
+    <FrameLayout
+        android:id="@+id/alerts_sonar_view"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/rd_icon_size"
+        android:textAlignment="center"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout="@layout/sonar_alerts">
+
+        <fragment
+            android:id="@+id/sonar_alert_fragment"
+            android:name="com.renault.parkassist.ui.sonar.SonarAlertMiniFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/sonar_alerts" />
+    </FrameLayout>
+
+    <alliancex.renault.ui.RenaultIconView
+        android:id="@+id/elt_sonar_raeb_off"
+        style="@style/RenaultIconView"
+        android:layout_marginHorizontal="@dimen/rd_dialog_radius"
+        android:layout_marginTop="@dimen/rd_dialog_radius"
+        android:background="@drawable/pdr_overlay_background"
+        android:src="@drawable/rimg_element_camera_warning_off"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

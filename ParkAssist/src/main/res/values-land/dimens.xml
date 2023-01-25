@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sonar_settings_bottom_margin">0dp</dimen>
+
+    <!-- Dimension for padding of hue_seek_bar_value -->
+    <dimen name="seekbar_progress_value_padding">0dp</dimen>
+</resources>

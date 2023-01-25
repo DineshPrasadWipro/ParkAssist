@@ -1,0 +1,182 @@
+plugins {
+    id 'android-app'
+    id 'kotlin-android-extensions'
+    id 'android-lint'
+}
+
+android {
+    compileSdk BuildConfig.compileSdk
+
+    signingConfigs {
+        platform {
+            keyAlias 'platform'
+            keyPassword 'my_password'
+            storeFile file('device.keystore')
+            storePassword 'my_password'
+        }
+    }
+
+
+    defaultConfig {
+        applicationId "com.renault.parkassist"
+        testInstrumentationRunner "com.renault.parkassist.koin.KoinTestRunner"
+
+        minSdk BuildConfig.minSdk
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.platform
+            testCoverageEnabled true
+        }
+    }
+
+    testOptions.unitTests.includeAndroidResources = true
+
+    testOptions {
+        animationsDisabled = true
+    }
+
+    lintOptions {
+        disable 'MissingTranslation'
+        checkReleaseBuilds false
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    // Alliance
+    compileOnly libs.alliancex.car
+
+    releaseImplementation libs.renault.ui.components
+    debugImplementation (libs.renault.ui.components) {
+        exclude(group: 'com.renault.car.ui', module: 'ui-tokens-alias')
+    }
+    debugImplementation libs.renault.ui.tokens
+
+    implementation libs.alliancex.arch.core
+
+    implementation libs.bundles.renault.compositions
+
+    implementation libs.androidx.preferences
+    implementation libs.androidx.lifecycle.service
+    implementation libs.androidx.lifecycle.livedata.ktx
+    implementation libs.androidx.lifecycle.reactivestreams
+    implementation libs.androidx.annotations
+    implementation libs.androidx.navigation.fragment.ktx
+
+    // Koin
+    implementation libs.bundles.koin
+
+    // Rx
+    implementation libs.bundles.rxjava
+
+    // Lottie
+    implementation libs.lottie
+
+    // Test
+
+    // Two problems here, the current documentation asks for debugImplementation and not testImplementation scope due to limitations
+    // We had problems regarding the multiple dependencies regarding androidx.test:core lib. We had to exclude it from here.
+    //FIXME Will have to be discussed. See https://jira.dt.renault.com/browse/CCSEXT-4463
+    debugImplementation("androidx.fragment:fragment-testing:1.4.0") {
+        exclude(group: 'androidx.test', module: 'core')
+    }
+
+    testImplementation libs.bundles.test.unit
+
+    androidTestImplementation libs.bundles.test.android
+}
+
+task generatePermissionFile() {
+    doLast {
+        // Parse release manifest
+        def manifest = new XmlSlurper().parse(file("$buildDir/intermediates/merged_manifests/release/AndroidManifest.xml"))
+        // Read the package
+        def pkg = manifest.@package
+        println "Generate privapp-permissions-${pkg}.xml"
+        println "Package=${pkg}"
+
+        File permissionFile = new File("${buildDir}/outputs/privapp-permissions-${pkg}.xml")
+
+        // Start of permission file
+        permissionFile.write "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<permissions>\n"
+        permissionFile.append "\t<privapp-permissions package=\"$pkg\">\n"
+
+        // Add permissions
+        println "Permissions:"
+        manifest."uses-permission".each { p ->
+            String permission = p."@android:name"
+            println "   Add permission: " + p."@android:name"
+            permissionFile.append "\t\t<permission name=\"${p."@android:name"}\" />\n"
+        }
+        // End of permission file
+        permissionFile.append "\t</privapp-permissions>\n</permissions>"
+    }
+}
+
+afterEvaluate {
+    assembleRelease.finalizedBy generatePermissionFile
+}
+
+task replaceRelease(group: 'install', dependsOn: 'assembleRelease') {
+    doLast {
+        def apkFilename = android.applicationVariants.find { it.name == "release" }.outputs.first().outputFile
+        println "Found output file: " + apkFilename
+        def stdOutput = new ByteArrayOutputStream()
+        def errOutput = new ByteArrayOutputStream()
+        exec {
+            standardOutput = stdOutput
+            errorOutput = errOutput
+            commandLine '../scripts/openthedoor.sh'
+            args '-d', apkFilename
+            ext.output = {
+                return standardOutput.toString()
+            }
+            ignoreExitValue true
+        }
+        println(stdOutput.toString())
+        println(errOutput.toString())
+    }
+}
+
+task replaceDebug(group: 'install', dependsOn: 'assembleDebug') {
+    doLast {
+        def apkFilename = android.applicationVariants.find { it.name == "debug" }.outputs.first().outputFile
+        println "Found output file: " + apkFilename
+        def stdOutput = new ByteArrayOutputStream()
+        def errOutput = new ByteArrayOutputStream()
+        exec {
+            standardOutput = stdOutput
+            errorOutput = errOutput
+            commandLine '../scripts/openthedoor.sh'
+            args '-d', apkFilename, '-v', 'debug'
+            ext.output = {
+                return standardOutput.toString()
+            }
+            ignoreExitValue true
+        }
+        println(stdOutput.toString())
+        println(errOutput.toString())
+    }
+}
+
+task removeRelease(group: 'install', type: Exec) {
+    def stdOutput = new ByteArrayOutputStream()
+    def errOutput = new ByteArrayOutputStream()
+    standardOutput = stdOutput
+    errorOutput = errOutput
+    commandLine '../scripts/openthedoor.sh'
+    args '-r'
+    ext.output = {
+        return standardOutput.toString()
+    }
+    doLast {
+        println(stdOutput.toString())
+        println(errOutput.toString())
+    }
+}
+

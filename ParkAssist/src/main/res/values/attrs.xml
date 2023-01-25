@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="standardTextColor" format="color" />
+    <attr name="mexModeSubcategoriesBackground" format="color" />
+    <attr name="mexModeSubcategoryContainerBackground" format="color" />
+
+    <declare-styleable name="GlobalAttributes">
+        <attr name="textSize" format="dimension" />
+        <attr name="showDivider" format="boolean" />
+        <attr name="textAppearance" format="reference" />
+        <attr name="thumb" format="reference" />
+        <attr name="track" format="reference" />
+        <attr name="gradientStart" format="color" />
+        <attr name="gradientStop" format="color" />
+    </declare-styleable>
+
+    <!-- Menu Item -->
+    <declare-styleable name="MenuItem">
+        <attr name="textAppearance" />
+        <attr name="statusTextAppearance" format="reference" />
+    </declare-styleable>
+
+    <!-- Title Seekbar -->
+    <declare-styleable name="TitleSeekbar">
+        <attr name="title" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ManeuverProgressBar">
+        <attr name="forward" format="boolean" />
+        <attr name="progress" format="float" />
+        <attr name="innerPadding" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="CameraIndicatorView">
+        <attr name="direction" format="enum">
+            <enum name="front" value="0" />
+            <enum name="rear" value="1" />
+            <enum name="none" value="2" />
+            <enum name="trailer" value="3" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="HfpGuidancePictureView">
+        <attr name="apa_direction" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="undefined" value="-255" />
+        </attr>
+        <attr name="ManeuverMove" format="enum">
+            <enum name="first_move" value="0" />
+            <enum name="backward_move" value="1" />
+            <enum name="forward_move" value="2" />
+            <enum name="undefined" value="-255" />
+        </attr>
+        <attr name="ManeuverType" format="enum">
+            <enum name="perpendicular" value="0" />
+            <enum name="parallel" value="1" />
+            <enum name="park_out" value="2" />
+            <enum name="undefined" value="-255" />
+        </attr>
+        <attr name="ExtendedInstructions" format="enum">
+            <enum name="stop" value="0" />
+            <enum name="engage_forward_gear" value="1" />
+            <enum name="drive_forward" value="2" />
+            <enum name="drive_backward" value="3" />
+            <enum name="finished" value="4" />
+            <enum name="engage_rear_gear" value="5" />
+            <enum name="maneuver_finished_take_back_control" value="6" />
+            <enum name="undefined" value="-255" />
+        </attr>
+    </declare-styleable>
+</resources>

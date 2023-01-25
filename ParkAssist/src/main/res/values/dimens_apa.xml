@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="apa_progressbar_width">40dp</dimen>
+    <dimen name="apa_gauge_inner_padding">7dp</dimen>
+    <dimen name="apa_gauge_container_width">210dp</dimen>
+
+    <dimen name="apa_guidance_gauge_top">17dp</dimen>
+    <dimen name="apa_guidance_gauge_bottom">16dp</dimen>
+
+    <dimen name="apa_sonar_margin_end">0dp</dimen>
+
+    <dimen name="apa_disclaimer_vertical_margin">6dp</dimen>
+    <dimen name="apa_scanning_maneuver_selection_bottom_margin">30dp</dimen>
+
+    <!-- Scanning View xml -->
+    <dimen name="apa_scanning_view_width">834dp</dimen>
+    <dimen name="apa_scanning_view_height">666dp</dimen>
+
+    <!-- New Guidance View xml -->
+    <dimen name="apa_guidance_vehicle_center_view_width">271dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_view_height">271dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_view_width_parkout">576dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_view_height_parkout">576dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_cut_view_width">271dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_cut_view_height">164dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_left_view_width">271dp</dimen>
+    <dimen name="apa_guidance_vehicle_left_view_height">271dp</dimen>
+    <dimen name="apa_guidance_vehicle_left_view_width_parkout">576dp</dimen>
+    <dimen name="apa_guidance_vehicle_left_view_height_parkout">576dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_right_view_width">271dp</dimen>
+    <dimen name="apa_guidance_vehicle_right_view_height">271dp</dimen>
+    <dimen name="apa_guidance_vehicle_right_view_width_parkout">576dp</dimen>
+    <dimen name="apa_guidance_vehicle_right_view_height_parkout">576dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_park_view_width">271dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_park_view_height">211dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_front_view_width">271dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_front_view_height">227dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_back_view_width">271dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_back_view_height">226dp</dimen>
+
+    <dimen name="apa_guidance_parallel_left_parking_large_top">138dp</dimen>
+    <dimen name="apa_guidance_parallel_left_parking_large_bottom">138dp</dimen>
+
+    <dimen name="apa_guidance_parallel_right_parking_large_top">138dp</dimen>
+    <dimen name="apa_guidance_parallel_right_parking_large_bottom">138dp</dimen>
+
+    <dimen name="apa_guidance_parallel_left_parking_large_start">130dp</dimen>
+    <dimen name="apa_guidance_parallel_left_parking_large_end">225dp</dimen>
+
+    <dimen name="apa_guidance_parallel_right_parking_large_start">225dp</dimen>
+    <dimen name="apa_guidance_parallel_right_parking_large_end">130dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_parallel_front_top">31dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_parallel_front_top_parkout">45dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_sides_top_parkout">46dp</dimen>
+    <dimen name="apa_guidance_vehicle_left_top_parkout">45dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_parallel_back_bottom">31dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_parallel_front_bottom">12dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_parallel_front_bottom_parkout">45dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_sides_bottom_parkout">45dp</dimen>
+    <dimen name="apa_guidance_vehicle_left_bottom_parkout">45dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_parallel_back_top">12dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_cut_parallel_right_start">12dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_cut_parallel_right_end">110dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_cut_parallel_left_start">110dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_cut_parallel_left_end">12dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_cut_parallel_left_bottom">149dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_cut_parallel_right_bottom">149dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_cut_perpendicular_right_start">12dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_cut_perpendicular_right_end">110dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_cut_perpendicular_left_start">110dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_cut_perpendicular_left_end">12dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_cut_perpendicular_left_bottom">149dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_cut_perpendicular_right_bottom">149dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_left_parallel_left_top">21dp</dimen>
+    <dimen name="apa_guidance_vehicle_left_parallel_left_bottom">21dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_right_parallel_left_top">21dp</dimen>
+    <dimen name="apa_guidance_vehicle_right_parallel_left_bottom">21dp</dimen>
+    <dimen name="apa_guidance_vehicle_right_top_parkout">45dp</dimen>
+    <dimen name="apa_guidance_vehicle_right_bottom_parkout">45dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_parallel_left_start">13dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_parallel_left_end">108dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_parallel_left_start_parkout">28dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_parallel_left_end_parkout">230dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_sides_start_parkout">129dp</dimen>
+    <dimen name="apa_guidance_vehicle_left_start_parkout">129dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_parallel_right_start">108dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_parallel_right_end">13dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_parallel_right_start_parkout">230dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_parallel_right_end_parkout">28dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_sides_end_parkout">129dp</dimen>
+    <dimen name="apa_guidance_vehicle_left_end_parkout">129dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_parallel_center_top">21dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_parallel_center_bottom">21dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_car_start">81dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_car_end">81dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_car_start_parkout">173dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_car_end_parkout">173dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_cut_car_negative_margin">81dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_cut_car_start">81dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_cut_car_end">81dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_left_car_start">81dp</dimen>
+    <dimen name="apa_guidance_vehicle_left_car_end">81dp</dimen>
+    <dimen name="apa_guidance_vehicle_left_car_start_parkout">173dp</dimen>
+    <dimen name="apa_guidance_vehicle_left_car_end_parkout">173dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_right_car_start">81dp</dimen>
+    <dimen name="apa_guidance_vehicle_right_car_end">81dp</dimen>
+    <dimen name="apa_guidance_vehicle_right_car_start_parkout">173dp</dimen>
+    <dimen name="apa_guidance_vehicle_right_car_end_parkout">173dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_park_car_start">81dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_park_car_end">81dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_front_car_start">81dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_front_car_end">81dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_back_car_start">81dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_back_car_end">81dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_car_top">25dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_car_bottom">25dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_car_top_parkout">54dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_car_bottom_parkout">54dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_cut_car_bottom">25dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_left_car_top">25dp</dimen>
+    <dimen name="apa_guidance_vehicle_left_car_bottom">25dp</dimen>
+    <dimen name="apa_guidance_vehicle_left_car_top_parkout">54dp</dimen>
+    <dimen name="apa_guidance_vehicle_left_car_bottom_parkout">54dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_right_car_top">25dp</dimen>
+    <dimen name="apa_guidance_vehicle_right_car_bottom">25dp</dimen>
+    <dimen name="apa_guidance_vehicle_right_car_top_parkout">54dp</dimen>
+    <dimen name="apa_guidance_vehicle_right_car_bottom_parkout">54dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_arrow_front_start">117dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_arrow_front_end">117dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_arrow_curve_up_start">88dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_arrow_curve_up_end">88dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_arrow_back_start">117dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_arrow_back_end">117dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_arrow_curve_down_start">88dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_arrow_curve_down_end">88dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_arrow_left_top">117dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_arrow_left_bottom">117dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_curve_left_top_parkout">174dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_curve_left_bottom_parkout">174dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_arrow_doublecurve_left_top">82dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_arrow_doublecurve_left_bottom">82dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_arrow_right_top">117dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_arrow_right_bottom">117dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_curve_right_top_parkout">174dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_curve_right_bottom_parkout">174dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_arrow_doublecurve_right_top">82dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_arrow_doublecurve_right_bottom">82dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_cut_curve_back_start">88dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_cut_curve_back_end">88dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_cut_arrow_left_top">10dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_cut_arrow_left_bottom">117dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_cut_arrow_right_top">10dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_cut_arrow_right_bottom">117dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_front_arrow_front_start">117dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_front_arrow_front_end">117dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_back_arrow_back_start">117dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_back_arrow_back_end">117dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_front_stop_front_start">100dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_front_stop_front_end">100dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_back_stop_back_start">100dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_back_stop_back_end">100dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_arrow_front_top">18dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_arrow_front_bottom">215dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_arrow_curve_up_bottom">200dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_arrow_curve_down_top">200dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_arrow_back_top">213dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_arrow_back_bottom">20dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_cut_arrow_back_bottom">20dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_arrow_left_start">44dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_arrow_left_end">189dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_arrow_doublecurve_left_start">29dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_arrow_doublecurve_left_end">189dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_arrow_right_start">189dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_arrow_right_end">44dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_arrow_doublecurve_right_start">189dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_arrow_doublecurve_right_end">29dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_curve_left_start_parkout">61dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_curve_left_end_parkout">403dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_curve_right_start_parkout">403dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_curve_right_end_parkout">61dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_cut_arrow_left_start">44dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_cut_arrow_left_end">189dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_cut_arrow_right_start">189dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_cut_arrow_right_end">44dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_front_arrow_left_start">44dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_front_arrow_left_end">189dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_front_arrow_right_start">189dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_front_arrow_right_end">44dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_back_arrow_left_start">44dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_back_arrow_left_end">189dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_back_arrow_right_start">189dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_back_arrow_right_end">44dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_cut_curve_back_top">94dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_left_parallel_left_start">61dp</dimen>
+    <dimen name="apa_guidance_vehicle_left_parallel_left_end">61dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_right_parallel_left_start">61dp</dimen>
+    <dimen name="apa_guidance_vehicle_right_parallel_left_end">61dp</dimen>
+    <dimen name="apa_guidance_vehicle_right_start_parkout">129dp</dimen>
+    <dimen name="apa_guidance_vehicle_right_end_parkout">129dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_park_perpendicular_start">61dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_park_perpendicular_end">61dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_front_perpendicular_start">61dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_front_perpendicular_end">61dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_back_perpendicular_start">61dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_back_perpendicular_end">61dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_back_stop_perpendicular_start">61dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_back_stop_perpendicular_end">61dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_left_easypark_front_start">196dp</dimen>
+    <dimen name="apa_guidance_vehicle_left_easypark_front_start_parkout">417dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_right_easypark_front_end">196dp</dimen>
+    <dimen name="apa_guidance_vehicle_right_easypark_front_end_parkout">417dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_left_easypark_front_end">37dp</dimen>
+    <dimen name="apa_guidance_vehicle_left_easypark_front_end_parkout">79dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_right_easypark_front_start">37dp</dimen>
+    <dimen name="apa_guidance_vehicle_right_easypark_front_start_parkout">79dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_left_easypark_front_top">55dp</dimen>
+    <dimen name="apa_guidance_vehicle_left_easypark_front_top_parkout">117dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_right_easypark_front_top">55dp</dimen>
+    <dimen name="apa_guidance_vehicle_right_easypark_front_top_parkout">117dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_left_easypark_front_bottom">178dp</dimen>
+    <dimen name="apa_guidance_vehicle_left_easypark_front_bottom_parkout">379dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_right_easypark_front_bottom">178dp</dimen>
+    <dimen name="apa_guidance_vehicle_right_easypark_front_bottom_parkout">379dp</dimen>
+
+    <dimen name="apa_guidance_perpendicular_center_parking_finished_top">42dp</dimen>
+
+    <dimen name="apa_guidance_perpendicular_center_parking_finished_bottom">233dp</dimen>
+
+    <dimen name="apa_guidance_perpendicular_center_parking_finished_start">177dp</dimen>
+    <dimen name="apa_guidance_perpendicular_center_parking_finished_end">177dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_park_perpendicular_top">102dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_front_perpendicular_top">76dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_front_perpendicular_bottom">9dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_front_negative_margin">9dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_back_perpendicular_top">9dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_back_perpendicular_bottom">78dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_front_stop_perpendicular_bottom">86dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_front_car_top">8dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_front_arrow_front_bottom">190dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_front_stop_front_bottom">170dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_front_arrow_left_top">99dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_front_arrow_right_top">99dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_front_arrow_left_bottom">91dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_front_arrow_right_bottom">91dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_back_arrow_left_top">91dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_back_arrow_left_bottom">97dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_back_arrow_right_top">91dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_back_arrow_right_bottom">97dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_back_stop_perpendicular_top">84dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_back_stop_perpendicular_bottom">4dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_back_car_bottom">6dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_back_arrow_back_top">188dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_back_stop_back_top">170dp</dimen>
+
+    <dimen name="apa_guidance_perpendicular_left_parking_large_top">141dp</dimen>
+
+    <dimen name="apa_guidance_perpendicular_right_parking_large_top">141dp</dimen>
+
+    <dimen name="apa_guidance_perpendicular_left_parking_large_bottom">134dp</dimen>
+
+    <dimen name="apa_guidance_perpendicular_right_parking_large_bottom">134dp</dimen>
+
+    <dimen name="apa_guidance_perpendicular_left_parking_large_start">84dp</dimen>
+
+    <dimen name="apa_guidance_perpendicular_right_parking_large_end">84dp</dimen>
+
+    <dimen name="apa_guidance_perpendicular_left_parking_large_end">270dp</dimen>
+
+    <dimen name="apa_guidance_perpendicular_right_parking_large_start">270dp</dimen>
+
+    <item name="apa_guidance_vehicle_center_curve_left_rotation" format="float" type="dimen">180</item>
+
+    <item name="apa_guidance_vehicle_left_car_rotation_left" format="float" type="dimen">50</item>
+
+    <item name="apa_guidance_vehicle_right_car_rotation_right" format="float" type="dimen">-50</item>
+
+    <dimen name="apa_guidance_parallel_left_parking_finished_start">237dp</dimen>
+    <dimen name="apa_guidance_parallel_left_parking_finished_top">138dp</dimen>
+    <dimen name="apa_guidance_parallel_left_parking_finished_end">118dp</dimen>
+    <dimen name="apa_guidance_parallel_left_parking_finished_bottom">138dp</dimen>
+
+    <dimen name="apa_guidance_parallel_right_parking_finished_start">118dp</dimen>
+    <dimen name="apa_guidance_parallel_right_parking_finished_top">138dp</dimen>
+    <dimen name="apa_guidance_parallel_right_parking_finished_end">237dp</dimen>
+    <dimen name="apa_guidance_parallel_right_parking_finished_bottom">138dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_stop_start_parkout">228dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_stop_end_parkout">228dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_stop_top_parkout">261dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_stop_bottom_parkout">261dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_stop_start">107dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_stop_end">107dp</dimen>
+
+    <dimen name="apa_guidance_vehicle_center_back_stop_top">100dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_back_stop_bottom">100dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_front_stop_bottom">100dp</dimen>
+    <dimen name="apa_guidance_vehicle_center_front_stop_top">100dp</dimen>
+
+
+    <!-- Scanning Top Car View-->
+    <dimen name="apa_scanning_car_top_width">388dp</dimen>
+    <dimen name="apa_scanning_car_top_height">482dp</dimen>
+
+    <dimen name="apa_scanning_car_top_view_start">223dp</dimen>
+    <dimen name="apa_scanning_car_top_view_end">223dp</dimen>
+    <dimen name="apa_scanning_car_top_view_top">48dp</dimen>
+    <dimen name="apa_scanning_car_top_view_bottom">136dp</dimen>
+
+    <dimen name="apa_scanning_car_top_animation_size">200dp</dimen>
+
+    <dimen name="apa_scanning_car_top_animation_vertical_margin_top">70dp</dimen>
+    <dimen name="apa_scanning_car_top_animation_vertical_margin_bottom">212dp</dimen>
+
+    <dimen name="apa_scanning_car_top_vehicle_horizontal_margin">130dp</dimen>
+    <dimen name="apa_scanning_car_top_vehicle_vertical_margin_top">40dp</dimen>
+    <dimen name="apa_scanning_car_top_vehicle_vertical_margin_bottom">182dp</dimen>
+
+    <dimen name="apa_scanning_car_top_placeholder_size">80dp</dimen>
+    <dimen name="apa_scanning_car_top_stop_width">120dp</dimen>
+    <dimen name="apa_scanning_car_top_stop_height">54dp</dimen>
+    <dimen name="apa_scanning_car_top_bottom_placeholder_margin_start">46dp</dimen>
+    <dimen name="apa_scanning_car_top_bottom_placeholder_margin_top">261dp</dimen>
+    <dimen name="apa_scanning_car_top_bottom_placeholder_margin_end">262dp</dimen>
+    <dimen name="apa_scanning_car_top_bottom_placeholder_margin_bottom">141dp</dimen>
+
+    <dimen name="apa_scanning_car_top_bottom_center_placeholder_margin_start">94dp</dimen>
+    <dimen name="apa_scanning_car_top_bottom_center_placeholder_margin_end">94dp</dimen>
+    <dimen name="apa_scanning_car_top_bottom_center_placeholder_margin_top">232dp</dimen>
+
+    <dimen name="apa_scanning_right_parking_parallel_start">486dp</dimen>
+    <dimen name="apa_scanning_right_parking_parallel_end">268dp</dimen>
+    <dimen name="apa_scanning_right_parking_parallel_top">469dp</dimen>
+    <dimen name="apa_scanning_right_parking_parallel_bottom">117dp</dimen>
+
+    <dimen name="apa_scanning_left_parking_parallel_start">268dp</dimen>
+    <dimen name="apa_scanning_left_parking_parallel_end">486dp</dimen>
+    <dimen name="apa_scanning_left_parking_parallel_top">469dp</dimen>
+    <dimen name="apa_scanning_left_parking_parallel_bottom">117dp</dimen>
+
+    <dimen name="apa_scanning_right_parking_perpendicular_start">553dp</dimen>
+    <dimen name="apa_scanning_right_parking_perpendicular_end">201dp</dimen>
+    <dimen name="apa_scanning_right_parking_perpendicular_top">404dp</dimen>
+    <dimen name="apa_scanning_right_parking_perpendicular_bottom">182dp</dimen>
+
+    <dimen name="apa_scanning_left_parking_perpendicular_start">201dp</dimen>
+    <dimen name="apa_scanning_left_parking_perpendicular_end">553dp</dimen>
+    <dimen name="apa_scanning_left_parking_perpendicular_top">404dp</dimen>
+    <dimen name="apa_scanning_left_parking_perpendicular_bottom">182dp</dimen>
+
+    <!-- Guidance Picture -->
+    <dimen name="apa_guidance_picture_width">392dp</dimen>
+    <dimen name="apa_guidance_picture_height">313dp</dimen>
+
+    <!-- Masking Car-->
+    <item name="apa_masking_car_guideline_horizontal" format="float" type="dimen">0.20</item>
+    <item name="apa_masking_car_guideline_vertical" format="float" type="dimen">0.80</item>
+    <!-- masking Car Movement-->
+    <item name="apa_masking_car_movement_guideline_top" format="float" type="dimen">0.72</item>
+    <item name="apa_masking_car_movement_guideline_bottom" format="float" type="dimen">0.82</item>
+
+    <!-- Apa settings -->
+    <dimen name="apa_settings_preference_margin_vertical">10dp</dimen>
+
+    <!-- HFP scanning -->
+    <dimen name="hfp_scanning_illustrations_ratio">.6672</dimen>
+    <dimen name="hfp_scanning_sonar_ratio">.3328</dimen>
+
+</resources>

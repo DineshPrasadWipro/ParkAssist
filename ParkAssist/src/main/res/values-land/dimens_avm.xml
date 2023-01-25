@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- STANDARD VIEW [avm_birdrearfront-land] -->
+    <!-- (view cut in 2 parts : camera (626/938 ~ 2/3) & sonar (312/938 ~ 1/3)) -->
+    <!-- [view_land_938_500_px] sonar alerts width percentage -->
+    <!-- (margin start from camera indicator = 20) alerts width / camera width = 416 / 626 = 0.66 -->
+    <item name="avm_std_alerts_width_percent" format="float" type="dimen">.66</item>
+    <!-- [view_land_fapk_scanningview] (top to button_center) / layout height = (100 + 80 / 2) / 440 -->
+    <item name="avm_std_easypark_vertical_bias" format="float" type="dimen">.32</item>
+
+    <!-- APA VIEW -->
+    <!-- (margin start from camera indicator = 20) alerts width / camera width = 288 / 551 = 0.52 -->
+    <item name="apa_alerts_width_percent" format="float" type="dimen">.52</item>
+
+    <!-- PANORAMIC VIEW [avm_panoramic-land] -->
+    <!-- [view_land_1040_492_px] sonar alerts width percentage -->
+    <dimen name="avm_pano_camera_sonar_width">160dp</dimen>
+    <dimen name="avm_pano_camera_sonar_height">277dp</dimen>
+    <dimen name="avm_pano_alerts_margin_horizontal">40dp</dimen>
+    <!-- [view_land_1040_492_px] sonar zoning 160 x 182 - horizontal position -->
+    <!-- (camera width - sonar width) / camera width = (1040 - 160) / 1040 = 0.85 -->
+    <item name="avm_pano_camera_zoning_horizontal_weight" format="float" type="dimen">.85</item>
+    <item name="avm_pano_sonar_zoning_horizontal_weight" format="float" type="dimen">.15</item>
+
+    <!-- SIDES VIEW [avm_birdsides-land] -->
+    <!-- Vertical bar masks size -->
+    <dimen name="avm_sides_mask_width">3dp</dimen>
+    <!-- [view_land_birsides] sonar alerts width percentage -->
+    <!-- (h-centered in camera zoning) alerts width / camera width  = 288 / 628.4 = 0.46 -->
+    <item name="avm_sides_alerts_width_percent" format="float" type="dimen">.46</item>
+
+    <!-- 3D VIEW -->
+    <dimen name="avm_3d_camera_sonar_width">131dp</dimen>
+    <dimen name="avm_3d_camera_sonar_height">226dp</dimen>
+    <!-- (camera width - sonar width) / camera width = (867 - 133) / 867 = 0.85 -->
+    <item name="avm_3d_sonar_zoning_horizontal_weight" format="float" type="dimen">.15</item>
+
+</resources>

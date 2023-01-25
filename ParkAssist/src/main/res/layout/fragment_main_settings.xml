@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<alliancex.renault.ui.RenaultDriverOrientedLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/carsettings_assist_parking"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@drawable/ic_grid_port">
+
+    <tag
+        android:id="@id/uxTag"
+        android:value="@string/main_settings" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_main_setting_preference"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/rd_grid_padding"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <include layout="@layout/rl_grid_keyline_6_begin" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/main_settings_preference_fragment"
+            android:name="com.renault.parkassist.ui.settings.MainSettingsPreferenceFragment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="@id/rid_grid_keyline_6_begin"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_settings_sonar_pref_fragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <include layout="@layout/rl_grid_keyline_6_end" />
+
+        <include layout="@layout/rl_grid_keyline_0_end" />
+
+        <com.renault.ui.parkassist.RenaultParkAssistSettingsView
+            android:id="@+id/main_settings_sonar_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/sonar_settings_bottom_margin"
+            app:layout_constraintEnd_toEndOf="@id/rid_grid_keyline_0_end"
+            app:layout_constraintStart_toStartOf="@id/rid_grid_keyline_6_end"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</alliancex.renault.ui.RenaultDriverOrientedLayout>

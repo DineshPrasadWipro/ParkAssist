@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/upa_popup"
+    style="@style/PopupDialogStyle"
+    android:layout_width="@dimen/sonar_widget_width"
+    android:layout_height="@dimen/sonar_widget_height"
+    android:orientation="vertical">
+
+    <tag
+        android:id="@id/uxTag"
+        android:value="@string/upa_popup_ux" />
+
+    <alliancex.renault.ui.RenaultDriverOrientedLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <alliancex.renault.ui.RenaultIconView
+            android:id="@+id/upa_pip_close"
+            style="@style/RenaultIconView"
+            android:src="@drawable/ric_gen_close" />
+    </alliancex.renault.ui.RenaultDriverOrientedLayout>
+
+    <fragment
+        android:id="@+id/sonar_sensor_popup_fragment"
+        android:name="com.renault.parkassist.ui.sonar.SonarSensorPopUpFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:layout="@layout/sonar_sensor_popup_layout" />
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/apa_sonarwithguidance"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="@drawable/ic_grid_port">
+
+    <alliancex.renault.ui.RenaultTextView
+        android:id="@+id/elt_hfp_guidance_instruction"
+        style="@style/RenaultTextView.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/rlb_parkassist_apa_engage_rear_gear" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/illustrations_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/apa_guidance_picture_height"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/elt_hfp_guidance_instruction">
+
+        <FrameLayout
+            android:layout_width="@dimen/rd_grid_column_width"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/apa_guidance_gauge_top"
+            android:layout_marginRight="@dimen/rd_grid_column_gutter"
+            android:layout_marginBottom="@dimen/apa_guidance_gauge_bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/hfp_guidance_picture"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="RtlHardcoded">
+
+            <com.renault.parkassist.ui.apa.ManeuverProgressBar
+                android:id="@+id/elt_adas_gauge"
+                android:layout_width="@dimen/apa_progressbar_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                app:innerPadding="@dimen/apa_gauge_inner_padding" />
+        </FrameLayout>
+
+        <com.renault.parkassist.ui.apa.GuidanceView
+            android:id="@+id/hfp_guidance_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:ExtendedInstructions="drive_backward"
+            app:ManeuverMove="backward_move"
+            app:ManeuverType="perpendicular"
+            app:apa_direction="left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <alliancex.renault.ui.RenaultDriverOrientedLayout
+        android:id="@+id/elt_hfp_camera_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/avm_std_camera_height"
+        android:layout_marginBottom="@dimen/rd_vertical_spacing"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/elt_easypark_disclaimer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <fragment
+            android:id="@+id/elt_hfp_camera_view_fragment"
+            android:name="com.renault.parkassist.ui.camera.CameraFragment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            tools:layout="@layout/fragment_ovl_rvc_std" />
+
+        <FrameLayout
+            android:id="@+id/sonar_full_fragment_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </alliancex.renault.ui.RenaultDriverOrientedLayout>
+
+    <alliancex.renault.ui.RenaultTextView
+        android:id="@+id/elt_easypark_disclaimer"
+        style="@style/RenaultTextView.Body1.Compressed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/rd_vertical_spacing"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="@string/rlb_parkassist_disclaimer"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

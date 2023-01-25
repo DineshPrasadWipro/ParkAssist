@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/avm_popup"
+    style="@style/PopupDialogStyle"
+    android:layout_width="@dimen/sonar_widget_width"
+    android:layout_height="@dimen/sonar_widget_height">
+
+    <tag
+        android:id="@id/uxTag"
+        android:value="@string/avm_popup_ux" />
+
+    <alliancex.renault.ui.RenaultDriverOrientedLayout
+        android:id="@+id/container_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal">
+
+        <alliancex.renault.ui.RenaultIconView
+            android:id="@+id/avm_pip_camera"
+            style="@style/RenaultIconView"
+            android:src="@drawable/ric_apps_camera" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <alliancex.renault.ui.RenaultIconView
+            android:id="@+id/avm_pip_close"
+            style="@style/RenaultIconView"
+            android:src="@drawable/ric_gen_close" />
+    </alliancex.renault.ui.RenaultDriverOrientedLayout>
+
+    <fragment
+        android:id="@+id/avm_popup_camera_fragment"
+        android:name="com.renault.parkassist.ui.camera.CameraFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/container_action"
+        android:layout_alignParentBottom="true"
+        tools:layout="@layout/fragment_ovl_avm_popup" />
+</RelativeLayout>

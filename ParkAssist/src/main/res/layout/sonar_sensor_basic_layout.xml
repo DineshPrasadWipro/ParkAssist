@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <tag
+        android:id="@id/uxTag"
+        android:value="" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintDimensionRatio="312:500"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/left_sonar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="@dimen/sonar_sensor_basic_left_percent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/right_sonar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="@dimen/sonar_sensor_basic_right_percent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/top_sonar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="@dimen/sonar_sensor_basic_top_percent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/bottom_sonar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="@dimen/sonar_sensor_basic_bottom_percent" />
+
+        <include
+            layout="@layout/sonar_sensor_layout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/bottom_sonar"
+            app:layout_constraintStart_toStartOf="@id/left_sonar"
+            app:layout_constraintEnd_toEndOf="@id/right_sonar"
+            app:layout_constraintTop_toTopOf="@+id/top_sonar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

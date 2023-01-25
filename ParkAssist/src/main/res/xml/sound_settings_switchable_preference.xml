@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <alliancex.renault.ui.RenaultSwitchPreference
+        android:id="@+id/sound_toggle"
+        android:key="@string/soundToggle"
+        android:title="@string/rlb_parkassist_sound"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true" />
+
+    <alliancex.renault.ui.RenaultPreference
+        android:id="@+id/sound_type_resume"
+        android:key="@string/soundTypeResume"
+        android:title="@string/rlb_parkassist_sound_settings_sound_type"
+        app:allowDividerAbove="false"
+        app:allowDividerBelow="false"
+        app:isPreferenceVisible="false"
+        app:paddingStepStart="1"
+        app:showBackground="true"
+        tools:isPreferenceVisible="true" />
+
+    <alliancex.renault.ui.RenaultRadioPreference
+        android:id="@+id/sound_type"
+        android:key="@string/soundRadioPreference"
+        app:allowDividerAbove="false"
+        app:allowDividerBelow="false"
+        app:isPreferenceVisible="false"
+        app:paddingStepStart="1"
+        app:showBackground="true"
+        tools:isPreferenceVisible="true" />
+
+    <alliancex.renault.ui.RenaultPreference
+        android:id="@+id/sound_volume_resume"
+        android:key="@string/soundVolumeResume"
+        android:title="@string/rlb_parkassist_sound_settings_volume"
+        app:allowDividerAbove="false"
+        app:allowDividerBelow="false"
+        app:isPreferenceVisible="true"
+        app:paddingStepStart="1"
+        app:showBackground="true"
+        tools:isPreferenceVisible="true" />
+
+    <alliancex.renault.ui.RenaultSeekBarPreference
+        android:id="@+id/sound_volume"
+        android:key="@string/soundVolume"
+        android:layout="@layout/rl_seekbar_preference"
+        app:allowDividerAbove="false"
+        app:allowDividerBelow="false"
+        app:isPreferenceVisible="true"
+        app:paddingStepStart="1"
+        app:showBackground="true"
+        app:showSeekBarValue="false"
+        tools:isPreferenceVisible="true" />
+
+</PreferenceScreen>
